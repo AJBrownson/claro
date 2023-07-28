@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'onest';
+    src: url(./fonts/OnestThin1602-hint.ttf);
+    src: url(./fonts//OnestThin1602-hint.woff);
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'onest';
+    src: url(./fonts//OnestRegular1602-hint.ttf);
+    src: url(./fonts//OnestRegular1602-hint.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'onest';
+    src: url(./fonts/OnestLight1602-hint.ttf);
+    src: url(./fonts//OnestLight1602-hint.woff);
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'onest';
+    src: url(./fonts/OnestMedium1602-hint.ttf);
+    src: url(./fonts//OnestMedium1602-hint.woff);
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'onest';
+    src: url(./fonts/OnestBold1602-hint.ttf);
+    src: url(./fonts//OnestBold1602-hint.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'onest';
+    src: url(./fonts/OnestExtraBold1602-hint.ttf);
+    src: url(./fonts//OnestExtraBold1602-hint.woff);
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'onest';
+    src: url(./fonts/OnestBlack1602-hint.ttf);
+    src: url(./fonts//OnestBlack1602-hint.woff);
+    font-weight: 900;
+    font-style: normal;
+}
