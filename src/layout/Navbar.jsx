@@ -1,15 +1,17 @@
 // import React from 'react'
+import Logo from '../assets/Techfield Logo/Techfield Logo.svg'
+
+
 
 const Navbar = () => {
   return (
     <nav className="bg-[#EAFFF6] p-4">
       <div className="flex items-center justify-between">
-        {/* Left part for the logo */}
         <div className="p-2">
           <img
-            src="/path/to/your/logo.png"
-            alt="Logo"
-            className="w-12 h-12"
+            src={Logo}
+            alt="Techfield Logo"
+            className="w-17 h-17"
           />
         </div>
 
@@ -17,13 +19,12 @@ const Navbar = () => {
           <li className="p-2 text-[#222237]">About</li>
           <li className="p-2 text-[#222237]">Products</li>
           <li className="p-2 text-[#222237]">Blog</li>
-          <li className="p-2 text-[#222237]">Contact</li>
+          <li className="p-2 text-[#35355f]">Contact</li>
         </ul>
 
-        {/* Right part for a button */}
         <div className="p-2">
-          <button className="px-4 py-2 bg-blue-500 text-white rounded-lg">
-            Button
+          <button className="px-4 py-2 bg-[#00EC85] text-[#222237] rounded-lg">
+            Get Started
           </button>
         </div>
       </div>
