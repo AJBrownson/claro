@@ -15,7 +15,7 @@ const Navbar = () => {
           />
         </div>
 
-        <ul className="flex space-x-4 font-onest">
+        <ul className="flex space-x-4">
           <li className="p-2 text-[#222237]">About</li>
           <li className="p-2 text-[#222237]">Products</li>
           <li className="p-2 text-[#222237]">Blog</li>
@@ -23,7 +23,8 @@ const Navbar = () => {
         </ul>
 
         <div className="p-2">
-          <button className="px-4 py-2 bg-[#00EC85] text-[#222237] rounded-lg">
+          {/* <button className="px-4 py-2 bg-[#00EC85] text-[#222237] rounded-lg"> */}
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
             Get Started
           </button>
         </div>
