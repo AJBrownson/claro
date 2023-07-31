@@ -12,16 +12,23 @@ import Portrait from "../assets/Images/portrait-successful-businesspeople-sittin
 import Portrait2 from "../assets/Images/Made for African founders _ startups.png";
 import AccIcon from "../assets/Icons/Accelerate Icon.svg";
 import ArrGreen from "../assets/Icons/arrow-trend-up Green.svg";
+import Arr from "../assets/Icons/arrow-trend-up.svg";
 import RaIcon from "../assets/Icons/Raise Icon.svg";
 import NorIcon from "../assets/Icons/Normadic Icon.svg";
 import MaIcon from "../assets/Icons/Match Icon.svg";
-import { AiFillCaretDown } from "react-icons/ai";
+import {PiCaretDown} from "react-icons/pi";
 import JoinIcon from "../assets/Icons/Join Premier Global Network Icon.svg";
 import ConnIcon from "../assets/Icons/Connect With Global Investors.svg";
 import LaunIcon from "../assets/Icons/Launch _ Expand Globally Icon.svg";
 import FindIcon from "../assets/Icons/Find Your Ideal Co-founders.svg";
 import ForgIcon from "../assets/Icons/Forge Powerful.svg";
 import AcceIcon from "../assets/Icons/Access Essential.svg";
+import Avatar from "../assets/Images/avatar6.png"
+import Blog1 from "../assets/Images/Blog 1.png"
+import Blog2 from "../assets/Images/Blog 2.png"
+
+
+
 
 const Home = () => {
   return (
@@ -171,7 +178,7 @@ const Home = () => {
                     Raise
                   </h1>
                 </span>
-                <AiFillCaretDown />
+                <PiCaretDown />
               </div>
               <div className="w-96 p-2 flex items-center justify-between">
                 <span className="flex flex-row items-center">
@@ -180,7 +187,7 @@ const Home = () => {
                     Normadic
                   </h1>
                 </span>
-                <AiFillCaretDown />
+                <PiCaretDown />
               </div>
               <div className="w-96 p-2 flex items-center justify-between">
                 <span className="flex flex-row items-center">
@@ -189,7 +196,7 @@ const Home = () => {
                     Match
                   </h1>
                 </span>
-                <AiFillCaretDown />
+                <PiCaretDown />
               </div>
             </div>
 
@@ -277,7 +284,7 @@ const Home = () => {
         <div>
           {/* testimonials */}
           <div className="p-16">
-            <div className="text-center border border-[#222237] p-16">
+            <div className="text-center p-16">
               <h1 className="text-3xl font-bold mb-3">Testimonials</h1>
               <p>
                 Join thousands of founders and innovators that are already
@@ -285,12 +292,68 @@ const Home = () => {
               </p>
             </div>
             {/* quote div */}
-            <div className="p-16 bg-[#EAFFF6] text-center font-bold">
-              <p>&quot;It’s an innovative, easy to use interface. It’s not confusing; you don’t need to explain it. It’s self-servicing&quot;.</p>
-              <h1>Katherine Abiola</h1>
-              <p>Founder Korner</p>
+            <div className="flex items-center justify-center">
+              <div className="quote-box">
+                <div className="bg-green-200 rounded-r-lg rounded-l-lg pt-10 pb-10 pl-20 pr-20 m-0 w-[40rem]">
+                  <blockquote className="p-0 mb-3 font-bold">
+                    &quot;It’s an innovative, easy to use interface. It’s not
+                    confusing; you don’t need to explain it. It’s
+                    self-servicing&quot;.
+                  </blockquote>
+                  <div className="text-center">
+                    <h1 className="font-bold text-xl">Katherine Abiola</h1>
+                    <p>Founder Korner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* avatar div */}
+            <div className="flex items-center justify-center mt-10">
+              <div className="flex justify-between w-96">
+              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
+              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
+              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
+              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* artcle div */}
+        <div>
+          <div className="flex items-center justify-center">
+            <div className="flex justify-between w-[75%]">
+              <div className="w-96">
+            <h1 className="text-3xl font-bold">Take a look at our articles & resources</h1>
+            </div>
+            <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+              <span className="flex items-center">
+              Browse Articles
+              <img src={Arr} alt="" className="pl-2"/>
+              </span>
+            </button>
+            </div>
+          </div>
+
+          {/* cards */}
+          <div className="flex justify-between mt-20 pl-40 pr-40">
+            <div className="w-[30rem] flex flex-col rounded-2xl bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row">
+              <img src={Blog1} alt="" className="h-20 w-20 rounded-xl object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"/>
+              <div className="flex flex-col justify-start p-6">
+                <h1 className="mb-2 text-xl font-medium ">Early-Stage Startup Investment in Africa report in 2023</h1>
+                <p>Discover products to help you grow and scale your startup. Or maybe you say Or collaborative learning.</p>
+                <h6>Read More</h6>
+              </div>
             </div>
 
+            <div className="w-[30rem] flex flex-col rounded-2xl bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row">
+              <img src={Blog2} alt="" className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"/>
+              <div className="flex flex-col justify-start p-6">
+                <h1 className="mb-2 text-xl font-medium ">Africa Start-up and Technology Developments in 2023</h1>
+                <p>Discover products to help you grow and scale your startup. Or maybe you say Or collaborative learning.</p>
+                <h6>Read More</h6>
+              </div>
+            </div>
           </div>
         </div>
       </main>
