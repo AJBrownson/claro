@@ -1,6 +1,6 @@
 // import React from 'react'
 import Logo from "../assets/Techfield Logo/Techfield Logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,9 @@ const Navbar = () => {
         </div>
 
         <ul className="flex space-x-4">
-        <li className="p-2 text-[#222237]">About</li>
+          <NavLink to="./about">
+            <li className="p-2 text-[#222237]">About</li>
+          </NavLink>
           <li className="p-2 text-[#222237]">Products</li>
           <li className="p-2 text-[#222237]">Blog</li>
           <li className="p-2 text-[#35355f]">Contact</li>
