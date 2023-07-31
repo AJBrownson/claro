@@ -1,4 +1,6 @@
 // import React from 'react'
+import BG from "../assets/Images/Background Graphic Element.svg";
+import BGDark from "../assets/Images/Dark Background Element.svg";
 import HeroImage from "../assets/Images/Hero Image.png";
 import Img1 from "../assets/Companies Logos/62ea4e159b98557bdd40b938_Company logo.svg";
 import Img2 from "../assets/Companies Logos/62ea4e159c9dd47ae626cb4e_Company logo-2.svg";
@@ -16,17 +18,16 @@ import Arr from "../assets/Icons/arrow-trend-up.svg";
 import RaIcon from "../assets/Icons/Raise Icon.svg";
 import NorIcon from "../assets/Icons/Normadic Icon.svg";
 import MaIcon from "../assets/Icons/Match Icon.svg";
-import {PiCaretDown} from "react-icons/pi";
+import { PiCaretDown } from "react-icons/pi";
 import JoinIcon from "../assets/Icons/Join Premier Global Network Icon.svg";
 import ConnIcon from "../assets/Icons/Connect With Global Investors.svg";
 import LaunIcon from "../assets/Icons/Launch _ Expand Globally Icon.svg";
 import FindIcon from "../assets/Icons/Find Your Ideal Co-founders.svg";
 import ForgIcon from "../assets/Icons/Forge Powerful.svg";
 import AcceIcon from "../assets/Icons/Access Essential.svg";
-import Avatar from "../assets/Images/avatar6.png"
-import Blog1 from "../assets/Images/Blog 1.png"
-import Blog2 from "../assets/Images/Blog 2.png"
-
+import Avatar from "../assets/Images/avatar6.png";
+import Blog1 from "../assets/Images/Blog 1.png";
+import Blog2 from "../assets/Images/Blog 2.png";
 
 
 
@@ -34,7 +35,10 @@ const Home = () => {
   return (
     <>
       <main>
-        <div className="bg-cover bg-center bg-[#EAFFF6] h-screen">
+        <div className="bg-cover bg-center bg-[#EAFFF6] h-screen relative">
+          <div className="absolute top-8 left-0">
+            <img src={BG} alt="" />
+          </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-[#222237] font-black leading-7 md:leading-10">
@@ -59,12 +63,14 @@ const Home = () => {
         </div>
 
         {/* section for the hero image */}
-        <div>
-          <div className="container mx-auto flex justify-center">
+        <div className="h-screen">
+          <div className="container mx-auto flex justify-center absolute top-[45rem] left-10">
             <img src={HeroImage} alt="" className="w-4/5" />
           </div>
-          <div className="container flex flex-row h-4/5 mt-24 justify-between items-center mx-auto">
-            <h3>Trusted by amazing startups</h3>
+          <div className="container flex flex-row h-4/5 mt-[30rem] justify-between items-center mx-auto p-16">
+            <span className="w-64">
+            <h3 className="text-5xl font-extrabold">Trusted by amazing startups</h3>
+            </span>
             <div className="grid gap-4 grid-cols-3 grid-rows-3">
               <img src={Img1} alt="" />
               <img src={Img3} alt="" />
@@ -80,7 +86,10 @@ const Home = () => {
         </div>
 
         {/* section for the approach */}
-        <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-16">
+        <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-16 relative">
+          <div className="absolute top-20 left-0 h-40">
+            <img src={BGDark} alt="" />
+          </div>
           <div className="text-center">
             <h1 className="text-3xl font-bold mb-3">Our approach</h1>
             <p>
@@ -207,7 +216,10 @@ const Home = () => {
         </div>
 
         {/* amplify section */}
-        <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-16">
+        <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-16 relative">
+        <div className="absolute top-[21rem] left-[-8rem] w-[100rem] h-[100rem">
+            <img src={BGDark} alt="" />
+          </div>
           <div className="text-center">
             <h1 className="text-3xl font-bold mb-3">
               Amplify Your Startup&apos;s Success
@@ -310,10 +322,10 @@ const Home = () => {
             {/* avatar div */}
             <div className="flex items-center justify-center mt-10">
               <div className="flex justify-between w-96">
-              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
-              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
-              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
-              <img src={Avatar} alt="" className="w-16 h-16 rounded-full"/>
+                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
+                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
+                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
+                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
               </div>
             </div>
           </div>
@@ -324,33 +336,53 @@ const Home = () => {
           <div className="flex items-center justify-center">
             <div className="flex justify-between w-[75%]">
               <div className="w-96">
-            <h1 className="text-3xl font-bold">Take a look at our articles & resources</h1>
-            </div>
-            <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
-              <span className="flex items-center">
-              Browse Articles
-              <img src={Arr} alt="" className="pl-2"/>
-              </span>
-            </button>
+                <h1 className="text-3xl font-bold">
+                  Take a look at our articles & resources
+                </h1>
+              </div>
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+                <span className="flex items-center">
+                  Browse Articles
+                  <img src={Arr} alt="" className="pl-2" />
+                </span>
+              </button>
             </div>
           </div>
 
           {/* cards */}
           <div className="flex justify-between mt-20 pl-40 pr-40">
             <div className="w-[30rem] flex flex-col rounded-2xl bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row">
-              <img src={Blog1} alt="" className="h-20 w-20 rounded-xl object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"/>
+              <img
+                src={Blog1}
+                alt=""
+                className="h-20 w-20 rounded-xl object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+              />
               <div className="flex flex-col justify-start p-6">
-                <h1 className="mb-2 text-xl font-medium ">Early-Stage Startup Investment in Africa report in 2023</h1>
-                <p>Discover products to help you grow and scale your startup. Or maybe you say Or collaborative learning.</p>
+                <h1 className="mb-2 text-xl font-medium ">
+                  Early-Stage Startup Investment in Africa report in 2023
+                </h1>
+                <p>
+                  Discover products to help you grow and scale your startup. Or
+                  maybe you say Or collaborative learning.
+                </p>
                 <h6>Read More</h6>
               </div>
             </div>
 
             <div className="w-[30rem] flex flex-col rounded-2xl bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row">
-              <img src={Blog2} alt="" className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"/>
+              <img
+                src={Blog2}
+                alt=""
+                className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+              />
               <div className="flex flex-col justify-start p-6">
-                <h1 className="mb-2 text-xl font-medium ">Africa Start-up and Technology Developments in 2023</h1>
-                <p>Discover products to help you grow and scale your startup. Or maybe you say Or collaborative learning.</p>
+                <h1 className="mb-2 text-xl font-medium ">
+                  Africa Start-up and Technology Developments in 2023
+                </h1>
+                <p>
+                  Discover products to help you grow and scale your startup. Or
+                  maybe you say Or collaborative learning.
+                </p>
                 <h6>Read More</h6>
               </div>
             </div>
