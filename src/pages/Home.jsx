@@ -320,7 +320,7 @@ const Home = () => {
         </div>
 
         {/* artcle div */}
-        <div>
+        <div className="mb-20">
           <div className="flex items-center justify-center">
             <div className="flex justify-between w-[75%]">
               <div className="w-96">
