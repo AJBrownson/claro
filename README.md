@@ -1,3 +1,3 @@
 # TECHFIELD
 
-### Template built with Vite
+### Template built with Vite and TailwindCSS
