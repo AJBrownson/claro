@@ -35,13 +35,13 @@ const Home = () => {
   return (
     <>
       <main>
-        <div className="bg-cover bg-center bg-[#EAFFF6] h-screen relative">
+        <div className="bg-cover bg-center bg-light-green h-screen relative">
           <div className="absolute top-8 left-0">
             <img src={BG} alt="" />
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-[#222237] font-black leading-7 md:leading-10">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-light-black font-black leading-7 md:leading-10">
                 Unlocking Global Venture Opportunities for Underserved
                 Early-Stage African Founders
               </h1>
@@ -52,10 +52,10 @@ const Home = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                 Get Started
               </button>
-              <button className="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[00EC85] bg-transparent transition duration-150 ease-in-out hover:border-[#00EC85] lg:text-xl lg:font-bold  hover:text-[#00EC85] rounded-xl border border-[#222237] text-[#222237] px-4 sm:px-10 py-2 sm:py-4 text-sm">
+              <button className="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[00EC85] bg-transparent transition duration-150 ease-in-out hover:border-lime-green lg:text-xl lg:font-bold  hover:text-[#00EC85] rounded-xl border border-[#222237] text-light-black px-4 sm:px-10 py-2 sm:py-4 text-sm">
                 Learn More
               </button>
             </div>
@@ -99,7 +99,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-3 gap-24 p-20">
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={Equip} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">Equip</h1>
               <p>
@@ -108,7 +108,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={Educate} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">Educate</h1>
               <p>
@@ -118,7 +118,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={Empower} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">Empower</h1>
               <p>
@@ -138,16 +138,16 @@ const Home = () => {
               <img src={Portrait} alt="" />
             </div>
             <div className="p-6 mt-16 w-1/2">
-              <h1 className="text-4xl font-bold mb-4 text-[#222237]">
+              <h1 className="text-4xl font-bold mb-4 text-light-black">
                 Building tools for founders and innovators in emerging markets.
               </h1>
-              <p className="text-[#222237] mb-10">
+              <p className="text-light-black mb-10">
                 At Techfield, we are committed to Unlocking global venture
                 opportunities and empowering underserved early-stage African
                 founders to accelerate growth, drive innovation, and make their
                 mark in the tech industry.
               </p>
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                 Learn More
               </button>
             </div>
@@ -156,24 +156,24 @@ const Home = () => {
           {/* lower section div */}
           <div className="flex flex-row justify-between align-middle p-4 mt-16">
             <div className="p-6 mt-4 w-1/2">
-              <h1 className="text-4xl font-bold mb-4 text-[#222237]">
+              <h1 className="text-4xl font-bold mb-4 text-light-black">
                 Made for African founders & startups
               </h1>
-              <p className="text-[#222237] mb-4">
+              <p className="text-light-black mb-4">
                 Discover products to help you grow and scale your startup.
               </p>
 
               {/* div for the dropdown */}
               <div>
-                <div className="w-96 border border-[#00EC85] p-4 rounded-2xl">
+                <div className="w-96 border border-lime-green p-4 rounded-2xl">
                   <span className="flex flex-row items-center">
                     <img src={AccIcon} alt="" className="pr-2" />
-                    <h1 className="text-lg font-semibold text-[#222237]">
+                    <h1 className="text-lg font-semibold text-light-black">
                       Accelerate
                     </h1>
                   </span>
                   <span className="flex justify-between">
-                    <p className="text-[#222237] ">
+                    <p className="text-light-black ">
                       Fast-track your startup&apos;s growth
                     </p>
                     <img src={ArrGreen} alt="" />
@@ -183,7 +183,7 @@ const Home = () => {
               <div className="w-96 p-2 flex items-center justify-between">
                 <span className="flex flex-row items-center">
                   <img src={RaIcon} alt="" className="pr-2" />
-                  <h1 className="text-lg font-semibold text-[#222237]">
+                  <h1 className="text-lg font-semibold text-light-black">
                     Raise
                   </h1>
                 </span>
@@ -192,7 +192,7 @@ const Home = () => {
               <div className="w-96 p-2 flex items-center justify-between">
                 <span className="flex flex-row items-center">
                   <img src={NorIcon} alt="" className="pr-2" />
-                  <h1 className="text-lg font-semibold text-[#222237]">
+                  <h1 className="text-lg font-semibold text-light-black">
                     Normadic
                   </h1>
                 </span>
@@ -201,7 +201,7 @@ const Home = () => {
               <div className="w-96 p-2 flex items-center justify-between">
                 <span className="flex flex-row items-center">
                   <img src={MaIcon} alt="" className="pr-2" />
-                  <h1 className="text-lg font-semibold text-[#222237]">
+                  <h1 className="text-lg font-semibold text-light-black">
                     Match
                   </h1>
                 </span>
@@ -228,7 +228,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-3 grid-rows-2 gap-24 p-20">
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={JoinIcon} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">
                 Join Premier Global Network
@@ -239,7 +239,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={ConnIcon} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">
                 Connect with Global Investors
@@ -250,7 +250,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={LaunIcon} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">
                 Launch and Expand Globally
@@ -260,7 +260,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={FindIcon} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">
                 Find Your Ideal Co-founders
@@ -268,7 +268,7 @@ const Home = () => {
               <p>Drive Your Vision Forward with Perfect Co-founder Matches</p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={ForgIcon} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">
                 Forge Powerful Partnerships
@@ -279,7 +279,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-[#00EC85]">
+            <div className="p-10 border rounded-3xl border-lime-green">
               <img src={AcceIcon} alt="" className="pt-4 pb-4" />
               <h1 className="text-xl font-bold pb-3">
                 Access Essential Venture Tools
@@ -340,7 +340,7 @@ const Home = () => {
                   Take a look at our articles & resources
                 </h1>
               </div>
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                 <span className="flex items-center">
                   Browse Articles
                   <img src={Arr} alt="" className="pl-2" />
