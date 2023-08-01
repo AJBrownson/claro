@@ -7,7 +7,9 @@ const Navbar = () => {
     <nav className="bg-[#EAFFF6] p-4">
       <div className="flex items-center justify-between">
         <div className="p-2">
-          <img src={Logo} alt="Techfield Logo" className="w-17 h-17" />
+          <NavLink to="/">
+            <img src={Logo} alt="Techfield Logo" className="w-17 h-17" />
+          </NavLink>
         </div>
 
         <ul className="flex space-x-4">

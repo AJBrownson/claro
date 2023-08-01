@@ -88,7 +88,7 @@ const About = () => {
 
         {/* third section */}
         <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-40 relative flex justify-between">
-          <div className="absolute top-20 left-0 h-40">
+          <div className="absolute top-32 left-0 h-40">
             <img src={BGDark} alt="" />
           </div>
           <div className="w-96 flex flex-col justify-between">
@@ -175,7 +175,8 @@ const About = () => {
 
           {/* lower section div */}
           <div className="w-full">
-            <h1 className="text-3xl font-bold mt-40 mb-5 text-[#222237] text-center">Come and visit our offices <pre className="text-3xl font-bold mb-3 text-[#222237]">around the world</pre></h1>
+            <h1 className="text-3xl font-bold mt-40 text-[#222237] text-center">Come and visit our offices</h1>
+            <h1 className="text-3xl font-bold mb-5 text-[#222237] text-center">around the world</h1>
             <div className="flex justify-between items-center">
             <div className="w-[70%]">
               <img src={Office} alt="" className="h-[25rem] w-[40rem] object-cover rounded-3xl"/>

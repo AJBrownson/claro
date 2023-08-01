@@ -17,12 +17,12 @@ const Products = () => {
     <>
       <main>
         <div className="bg-[#EAFFF6] h-screen relative">
-          <div className="absolute top-8 left-0 flex flex-row">
+          <div className="absolute top-[7rem] left-0 flex flex-row">
             <img src={BG} alt="" />
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-[#222237] font-black leading-7 md:leading-10">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-[#222237] font-bold leading-7 md:leading-10">
                 Raise the capital you need to fuel innovation, scale your
                 business, and turn your ideas into reality.
               </h1>
@@ -40,13 +40,13 @@ const Products = () => {
             </div>
           </div>
 
-          <div className="">
+          <div className="flex flex-col">
             <div className="text-center">
               <h1 className="text-3xl font-bold">
                 Trusted by amazing startups
               </h1>
             </div>
-            <div className="flex">
+            <div className="bg-[#EAFFF6] flex justify-between pl-[26rem] pr-[26rem]">
               <img src={Img1} alt="" className="w-28 h-28" />
               <img src={Img3} alt="" className="w-28 h-28" />
               <img src={Img2} alt="" className="w-28 h-28" />
@@ -56,8 +56,9 @@ const Products = () => {
 
         {/* second section */}
         <div className="container mt-24">
-          <div>
-            <h1>Great products tailored specifically for African Founders</h1>
+          <div className="text-center mt-52 mb-10">
+            <h1 className="text-3xl font-bold">Great products tailored specifically for</h1>
+            <h1 className="text-3xl font-bold">African Founders</h1>
           </div>
 
           {/* div for the cards */}
@@ -97,7 +98,7 @@ const Products = () => {
                 <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#222237] bg-[#222237] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl border border-[#222237] px-4 sm:px-10 text-[#00EC85] py-2 sm:py-4 text-sm">
                   <span className="flex items-center">
                     Get Started
-                    <img src={ArrowGreen} alt="" className="pl-3" />
+                    <img src={ArrowGreen} alt="" className="pl-3 w-9" />
                   </span>
                 </button>
               </div>
@@ -143,7 +144,7 @@ const Products = () => {
                 <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#222237] bg-[#222237] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl border border-[#222237] px-4 sm:px-10 text-[#00EC85] py-2 sm:py-4 text-sm">
                   <span className="flex items-center">
                     Get Started
-                    <img src={ArrowGreen} alt="" className="pl-3" />
+                    <img src={ArrowGreen} alt="" className="pl-3 w-9" />
                   </span>
                 </button>
               </div>

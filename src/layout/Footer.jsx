@@ -28,7 +28,7 @@ const Footer = () => {
         {/* middle deck */}
         <div className="flex items-center justify-between mt-16 pb-16 border-b-[1px] border-[#00EC85]">
           <div className="flex flex-col pb-20 w-[20rem]">
-            <img src={Logo} alt="" className="w-80 mb-6" />
+            <img src={Logo} alt="" className="w-64 mb-6" />
             <p className="mb-6">
               Expand your horizons and tap into a world of global opportunities.
             </p>
