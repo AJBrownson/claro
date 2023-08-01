@@ -2,6 +2,8 @@
 import BG from "../assets/Images/Background Graphic Element.svg";
 import Cofounder from "../assets/Images/Cofounder Match.png";
 
+
+
 const Blog = () => {
   return (
     <>

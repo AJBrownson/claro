@@ -9,6 +9,11 @@ export default {
     extend: {
       fontFamily: {
         'onest': ['Onest', 'sans-serif']
+      },
+      colors: {
+        "lime-green": "#00EC85",
+        "light-green": "#EAFFF6",
+        "light-black": "#222237",
       }
     },
   },

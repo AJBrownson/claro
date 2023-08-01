@@ -45,7 +45,7 @@ const Home = () => {
                 Unlocking Global Venture Opportunities for Underserved
                 Early-Stage African Founders
               </h1>
-              <p className="mt-5 sm:mt-10 lg:w-10/12 text-[#222237] font-normal text-center text-sm sm:text-lg">
+              <p className="mt-5 sm:mt-10 lg:w-10/12 font-normal text-center text-sm sm:text-lg text-light-black">
                 We connect underserved early-stage founders, innovators, and
                 talents to unlimited venture support and resources to accelerate
                 growth.
