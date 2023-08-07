@@ -2,7 +2,17 @@
 import Logo from "../assets/Techfield Logo/Techfield Logo.svg";
 import { NavLink } from "react-router-dom";
 
+
+
 const Navbar = () => {
+
+  const NavLinks = [
+    { title: 'About', link: '/about' },
+    { title: 'Products', link: '/products' },
+    { title: 'Blog', link: '/blog' },
+    { title: 'Contact', link: '/contact' }
+  ]
+
   return (
     <nav className="bg-[#EAFFF6] p-4">
       <div className="flex items-center justify-between">
@@ -13,7 +23,25 @@ const Navbar = () => {
         </div>
 
         <ul className="flex space-x-4">
-          <NavLink to="./about">
+          {NavLinks.map((item) => {
+            <NavLink
+              key={item.title}
+              to={item.link}
+              className={({isActive}) => {
+                return (
+                  'p-2 text-[#222237]' + 
+                  (!isActive
+                    ? 'text-[#222237]'
+                    : 'text-lime-green')
+                );
+              }}
+            >
+              <li>{item.title}</li>
+            </NavLink>
+          })}
+
+          
+          {/* <NavLink to="./about">
             <li className="p-2 text-[#222237]">About</li>
           </NavLink>
           <NavLink to="./products">
@@ -24,7 +52,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="./contact">
             <li className="p-2 text-[#222237]">Contact</li>
-          </NavLink>
+          </NavLink> */}
         </ul>
 
         <div className="p-2">
