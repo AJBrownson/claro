@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
-  const NavLinks = [
+  const navigation = [
     { title: 'About', link: '/about' },
     { title: 'Products', link: '/products' },
     { title: 'Blog', link: '/blog' },
@@ -23,24 +23,29 @@ const Navbar = () => {
         </div>
 
         <ul className="flex space-x-4">
-          {NavLinks.map((item) => {
-            <NavLink
-              key={item.title}
-              to={item.link}
-              className={({isActive}) => {
-                return (
-                  'p-2 text-[#222237]' + 
-                  (!isActive
-                    ? 'text-[#222237]'
-                    : 'text-lime-green')
-                );
-              }}
-            >
-              <li>{item.title}</li>
-            </NavLink>
-          })}
+          {navigation.map((item) => (
+            <li key={item.title} className="p-2">
+              <NavLink to={item.link} className='text-light-black'>
+                {item.title}
+              </NavLink>
+            </li>
+          ))}
+          {/* {navigation.map((item) => {
+              <li
+               key={item.title}
+               to={item.link}
+               className={({isActive}) => {
+                 return (
+                   'p-2 text-[#222237]' + 
+                   (!isActive
+                     ? 'text-[#222237]'
+                     : 'text-lime-green')
+                 );
+               }}
+              >{item.title}</li>
+          })} */}
 
-          
+
           {/* <NavLink to="./about">
             <li className="p-2 text-[#222237]">About</li>
           </NavLink>
@@ -53,7 +58,7 @@ const Navbar = () => {
           <NavLink to="./contact">
             <li className="p-2 text-[#222237]">Contact</li>
           </NavLink> */}
-        </ul>
+        </ul> 
 
         <div className="p-2">
           {/* <button className="px-4 py-2 bg-[#00EC85] text-[#222237] rounded-lg"> */}

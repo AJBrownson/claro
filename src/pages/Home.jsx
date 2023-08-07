@@ -40,23 +40,29 @@ const Home = () => {
             <img src={BG} alt="" />
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
-            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-light-black font-black leading-7 md:leading-10">
+            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-5 sm:mb-10">
+              <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
                 Unlocking Global Venture Opportunities for Underserved
                 Early-Stage African Founders
               </h1>
-              <p className="mt-5 sm:mt-10 lg:w-10/12 font-normal text-center text-sm sm:text-lg text-light-black">
+              <p className="mt-3 font-normal text-center text-lg text-light-black ml-24 mr-24">
                 We connect underserved early-stage founders, innovators, and
                 talents to unlimited venture support and resources to accelerate
                 growth.
               </p>
             </div>
-            <div className="flex justify-center items-center">
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
-                Get Started
+            <div className="grid grid-cols-2 gap-6">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-lg text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+                <span className="flex ">
+                  Get Started
+                  <img src={Arr} alt='' className="pl-3"/>
+                </span>
               </button>
-              <button className="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[00EC85] bg-transparent transition duration-150 ease-in-out hover:border-lime-green lg:text-xl lg:font-bold  hover:text-[#00EC85] rounded-xl border border-[#222237] text-light-black px-4 sm:px-10 py-2 sm:py-4 text-sm">
-                Learn More
+              <button className="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[00EC85] bg-transparent transition duration-150 ease-in-out hover:border-lime-green lg:text-xl lg:font-bold  hover:text-lime-green rounded-lg border border-light-black text-light-black px-4 sm:px-10 py-2 sm:py-4 text-sm">
+              <span className="flex ">
+                  Learn More
+                  <img src={Arr} alt='' className="pl-3"/>
+                </span>
               </button>
             </div>
           </div>
@@ -64,29 +70,29 @@ const Home = () => {
 
         {/* section for the hero image */}
         <div className="h-screen">
-          <div className="container mx-auto flex justify-center absolute top-[45rem] left-10">
+          <div className="container mx-auto flex justify-center absolute top-[39rem] left-10">
             <img src={HeroImage} alt="" className="w-4/5" />
           </div>
           <div className="container flex flex-row h-4/5 mt-[30rem] justify-between items-center mx-auto p-16">
             <span className="w-64">
             <h3 className="text-5xl font-extrabold">Trusted by amazing startups</h3>
             </span>
-            <div className="grid gap-4 grid-cols-3 grid-rows-3">
-              <img src={Img1} alt="" />
-              <img src={Img3} alt="" />
-              <img src={Img2} alt="" />
-              <img src={Img4} alt="" />
-              <img src={Img5} alt="" />
-              <img src={Img3} alt="" />
-              <img src={Img2} alt="" />
-              <img src={Img1} alt="" />
-              <img src={Img4} alt="" />
+            <div className="grid gap-10 grid-cols-3 grid-rows-3">
+              <img src={Img1} alt="" className="w-40" />
+              <img src={Img3} alt="" className="w-40" />
+              <img src={Img2} alt="" className="w-40" />
+              <img src={Img4} alt="" className="w-40" />
+              <img src={Img5} alt="" className="w-40" />
+              <img src={Img3} alt="" className="w-40" />
+              <img src={Img2} alt="" className="w-40" />
+              <img src={Img1} alt="" className="w-40" />
+              <img src={Img4} alt="" className="w-40" />
             </div>
           </div>
         </div>
 
         {/* section for the approach */}
-        <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-16 relative">
+        <div className="bg-light-black text-[#FFFFFF] h-3/4 p-16 relative">
           <div className="absolute top-20 left-0 h-40">
             <img src={BGDark} alt="" />
           </div>
@@ -147,7 +153,7 @@ const Home = () => {
                 founders to accelerate growth, drive innovation, and make their
                 mark in the tech industry.
               </p>
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                 Learn More
               </button>
             </div>
@@ -216,12 +222,12 @@ const Home = () => {
         </div>
 
         {/* amplify section */}
-        <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-16 relative">
-        <div className="absolute top-[21rem] left-[-8rem] w-[100rem] h-[100rem">
+        <div className="bg-light-black text-[#FFFFFF] h-1/2 p-16 relative">
+        <div className="absolute top-[21rem] left-[-16rem] w-[100rem] h-[100rem">
             <img src={BGDark} alt="" />
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-bold mb-3">
+            <h1 className="text-3xl font-bold mb-2">
               Amplify Your Startup&apos;s Success
             </h1>
             <p>Thousands of Founders and innovators are using us to;</p>
@@ -340,7 +346,7 @@ const Home = () => {
                   Take a look at our articles & resources
                 </h1>
               </div>
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                 <span className="flex items-center">
                   Browse Articles
                   <img src={Arr} alt="" className="pl-2" />
