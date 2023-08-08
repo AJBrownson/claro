@@ -9,7 +9,7 @@ import ComIcon from "../assets/Icons/Community.svg";
 import HelpIcon from "../assets/Icons/Help.svg";
 import CEO from "../assets/Images/CEO Remark.png";
 import Office from "../assets/Images/Techfield Office.png"
-
+import Arr from '../assets/Icons/arrow-trend-up.svg'
 
 
 const About = () => {
@@ -22,26 +22,29 @@ const About = () => {
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-[#222237] font-black leading-7 md:leading-10">
+              <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
                 Techfield is building navigational tools for underrepresented
                 founders and innovators in emerging markets.
               </h1>
-              <p className="mt-5 sm:mt-10 lg:w-10/12 text-[#222237] font-normal text-center text-sm sm:text-lg">
+              <p className="mt-3 font-normal text-center text-lg text-light-black ml-24 mr-24">
                 Be part of Techfield today and expand your horizons and tap into
                 a world of global venture opportunities
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
-                Get Started
+            <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-lg text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+                <span className="flex ">
+                  Get Started
+                  <img src={Arr} alt='' className="pl-3"/>
+                </span>
               </button>
             </div>
           </div>
         </div>
 
         {/* section for the hero images */}
-        <div className="h-screen">
-          <div className="container mx-auto flex justify-around pr-36 pl-36 absolute top-[48rem] left-10">
+        <div className="h-[90vh]">
+          <div className="container mx-auto flex justify-around pr-36 pl-36 absolute top-[39rem] left-10">
             <img
               src={AboutImage1}
               alt=""
@@ -53,7 +56,7 @@ const About = () => {
               className="w-96 h-[30rem] object-cover rounded-3xl "
             />
           </div>
-          <div className="container flex flex-row h-1/2 mt-[40rem] justify-between mx-auto pl-[11rem] pr-48">
+          <div className="container flex flex-row h-1/2 mt-[30rem] justify-between mx-auto pl-[11rem] pr-48">
             <span className="w-96">
               <img
                 src={AboutImage3}
@@ -62,7 +65,7 @@ const About = () => {
               />
             </span>
             <div className="flex flex-col w-[24rem]">
-              <h1 className="text-3xl font-bold pb-2">
+              <h1 className="text-3xl font-bold pb-5">
                 Why we do, what we do.
               </h1>
               <p className="pb-3">
@@ -87,7 +90,7 @@ const About = () => {
         </div>
 
         {/* third section */}
-        <div className="bg-[#222237] text-[#FFFFFF] h-3/4 p-40 relative flex justify-between">
+        <div className="bg-light-black text-[#FFFFFF] p-40 relative flex justify-between">
           <div className="absolute top-32 left-0 h-40">
             <img src={BGDark} alt="" />
           </div>
@@ -155,16 +158,16 @@ const About = () => {
               <img src={CEO} alt="" />
             </div>
             <div className="p-3 mt-16 w-1/2">
-              <h1 className="text-4xl font-bold mb-7 text-[#222237]">
+              <h1 className="text-4xl font-bold mb-7 text-light-black">
                 Democratizing access to global venture-building opportunities to
                 founders in Africa.
               </h1>
-              <p className="text-[#222237] mb-7">
+              <p className="text-light-black mb-7">
                 We pay more attention to impact-driven Founders, solving some of
                 the world&apos;s biggest challenges and addressing at least 5 of
                 UN&apos;s sustainable goals.
               </p>
-              <p className="text-[#222237]">
+              <p className="text-light-black">
                 To all early stage startup founders, Techfield is your catalyst
                 for innovation and growth, get access to tools, support, and
                 opportunities to ignite innovation and fuel your entrepreneurial
@@ -175,20 +178,19 @@ const About = () => {
 
           {/* lower section div */}
           <div className="w-full">
-            <h1 className="text-3xl font-bold mt-40 text-[#222237] text-center">Come and visit our offices</h1>
-            <h1 className="text-3xl font-bold mb-5 text-[#222237] text-center">around the world</h1>
+            <h1 className="text-3xl font-bold mt-40 mb-8 ml-80 mr-80 text-light-black text-center">Come and visit our offices around the world</h1>
             <div className="flex justify-between items-center">
             <div className="w-[70%]">
               <img src={Office} alt="" className="h-[25rem] w-[40rem] object-cover rounded-3xl"/>
             </div>
             <div className="w-[30%]">
               <div className="w-[16.5rem] mb-16">
-                <h1 className="text-3xl font-bold mb-3 text-[#222237]">Uyo, Nigeria</h1>
+                <h1 className="text-3xl font-bold mb-3 text-light-black">Uyo, Nigeria</h1>
                 <p>Suite 216, Ibom E-Library Uyo, Akwa Ibom State.Nigeria.</p>
               </div>
 
               <div className="w-[16.5rem]">
-                <h1 className="text-3xl font-bold mb-3 text-[#222237]">London Office</h1>
+                <h1 className="text-3xl font-bold mb-3 text-light-black">London Office</h1>
                 <p>2H Woodstock Studios 36 Woodstock Grove London, W12 8LE United Kingdom</p>
               </div>
             </div>

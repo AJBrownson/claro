@@ -40,7 +40,7 @@ const Home = () => {
             <img src={BG} alt="" />
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
-            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-5 sm:mb-10">
+            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-3 sm:mb-10">
               <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
                 Unlocking Global Venture Opportunities for Underserved
                 Early-Stage African Founders
@@ -69,13 +69,13 @@ const Home = () => {
         </div>
 
         {/* section for the hero image */}
-        <div className="h-screen">
+        <div className="h-[65vh]">
           <div className="container mx-auto flex justify-center absolute top-[39rem] left-10">
             <img src={HeroImage} alt="" className="w-4/5" />
           </div>
-          <div className="container flex flex-row h-4/5 mt-[30rem] justify-between items-center mx-auto p-16">
+          <div className="container flex flex-row h-4/5 mt-[30rem] justify-between mx-auto p-16 pl-32 pr-32">
             <span className="w-64">
-            <h3 className="text-5xl font-extrabold">Trusted by amazing startups</h3>
+            <h3 className="text-4xl font-bold leading-tight">Trusted by amazing startups</h3>
             </span>
             <div className="grid gap-10 grid-cols-3 grid-rows-3">
               <img src={Img1} alt="" className="w-40" />
@@ -96,7 +96,7 @@ const Home = () => {
           <div className="absolute top-20 left-0 h-40">
             <img src={BGDark} alt="" />
           </div>
-          <div className="text-center">
+          <div className="text-center mt-10">
             <h1 className="text-3xl font-bold mb-3">Our approach</h1>
             <p>
               We support our founders by equipping, educating, and
@@ -153,8 +153,11 @@ const Home = () => {
                 founders to accelerate growth, drive innovation, and make their
                 mark in the tech industry.
               </p>
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
-                Learn More
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-lg text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+                <span className="flex ">
+                  Learn More
+                  <img src={Arr} alt='' className="pl-3"/>
+                </span>
               </button>
             </div>
           </div>
@@ -182,7 +185,7 @@ const Home = () => {
                     <p className="text-light-black ">
                       Fast-track your startup&apos;s growth
                     </p>
-                    <img src={ArrGreen} alt="" />
+                    <img src={ArrGreen} alt="" className="w-6 h-6"/>
                   </span>
                 </div>
               </div>
@@ -193,7 +196,7 @@ const Home = () => {
                     Raise
                   </h1>
                 </span>
-                <PiCaretDown />
+                <PiCaretDown className="mr-3"/>
               </div>
               <div className="w-96 p-2 flex items-center justify-between">
                 <span className="flex flex-row items-center">
@@ -202,7 +205,7 @@ const Home = () => {
                     Normadic
                   </h1>
                 </span>
-                <PiCaretDown />
+                <PiCaretDown className="mr-3"/>
               </div>
               <div className="w-96 p-2 flex items-center justify-between">
                 <span className="flex flex-row items-center">
@@ -211,7 +214,7 @@ const Home = () => {
                     Match
                   </h1>
                 </span>
-                <PiCaretDown />
+                <PiCaretDown className="mr-3"/>
               </div>
             </div>
 
@@ -299,16 +302,17 @@ const Home = () => {
         </div>
 
         {/* testimonials section */}
-        <div>
+        <div className="mb-20">
           {/* testimonials */}
           <div className="p-16">
-            <div className="text-center p-16">
+            <div className="text-center p-16 pb-10">
               <h1 className="text-3xl font-bold mb-3">Testimonials</h1>
-              <p>
+              <p className=" mr-[22rem] ml-[22rem]">
                 Join thousands of founders and innovators that are already
                 enjoying the benefits of Techfield
               </p>
             </div>
+            
             {/* quote div */}
             <div className="flex items-center justify-center">
               <div className="quote-box">
@@ -337,12 +341,12 @@ const Home = () => {
           </div>
         </div>
 
-        {/* artcle div */}
-        <div className="mb-20">
+        {/* article div */}
+        <div className="mb-40">
           <div className="flex items-center justify-center">
             <div className="flex justify-between w-[75%]">
               <div className="w-96">
-                <h1 className="text-3xl font-bold">
+                <h1 className="text-3xl font-bold text-light-black">
                   Take a look at our articles & resources
                 </h1>
               </div>
@@ -357,41 +361,41 @@ const Home = () => {
 
           {/* cards */}
           <div className="flex justify-between mt-20 pl-40 pr-40">
-            <div className="w-[30rem] flex flex-col rounded-2xl bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row">
-              <img
-                src={Blog1}
-                alt=""
-                className="h-20 w-20 rounded-xl object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-              />
-              <div className="flex flex-col justify-start p-6">
-                <h1 className="mb-2 text-xl font-medium ">
-                  Early-Stage Startup Investment in Africa report in 2023
-                </h1>
-                <p>
-                  Discover products to help you grow and scale your startup. Or
-                  maybe you say Or collaborative learning.
-                </p>
-                <h6>Read More</h6>
-              </div>
+          <div className="flex flex-row justify-between items-center p-4 w-[30rem] shadow-xl shadow-slate-200 rounded-2xl">
+            <img
+              src={Blog1}
+              alt=""
+              className="w-48 h-48 object-cover rounded-xl"
+            />
+            <div className="flex flex-col pl-4">
+              <h1 className="font-bold text-sm mb-2 pr-12">
+                Early-Stage Startup Investment in Africa report in 2023
+              </h1>
+              <p className="text-sm mb-4">
+                Discover products to help you grow and scale your startup. Or
+                maybe you say Or collaborative learning.
+              </p>
+              <h3 className="font-bold text-sm">Read More</h3>
             </div>
+          </div>
 
-            <div className="w-[30rem] flex flex-col rounded-2xl bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row">
-              <img
-                src={Blog2}
-                alt=""
-                className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-              />
-              <div className="flex flex-col justify-start p-6">
-                <h1 className="mb-2 text-xl font-medium ">
-                  Africa Start-up and Technology Developments in 2023
-                </h1>
-                <p>
-                  Discover products to help you grow and scale your startup. Or
-                  maybe you say Or collaborative learning.
-                </p>
-                <h6>Read More</h6>
-              </div>
+          <div className="flex flex-row justify-between items-center p-4 w-[30rem] shadow-xl shadow-slate-200 rounded-2xl">
+            <img
+              src={Blog2}
+              alt=""
+              className="w-48 h-48 object-cover rounded-xl"
+            />
+            <div className="flex flex-col pl-4">
+              <h1 className="font-bold text-sm mb-2 pr-12">
+                Africa Start-up and Technology Developments in 2023
+              </h1>
+              <p className="text-sm mb-4">
+                Discover products to help you grow and scale your startup. Or
+                maybe you say Or collaborative learning.
+              </p>
+              <h3 className="font-bold text-sm">Read More</h3>
             </div>
+          </div>
           </div>
         </div>
       </main>

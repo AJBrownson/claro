@@ -16,22 +16,22 @@ const Products = () => {
   return (
     <>
       <main>
-        <div className="bg-[#EAFFF6] h-screen relative">
-          <div className="absolute top-[7rem] left-0 flex flex-row">
+        <div className="bg-light-green h-screen relative">
+          <div className="absolute top-[1.8rem] left-0 flex flex-row">
             <img src={BG} alt="" />
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-[#222237] font-bold leading-7 md:leading-10">
+              <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
                 Raise the capital you need to fuel innovation, scale your
                 business, and turn your ideas into reality.
               </h1>
-              <p className="mt-5 sm:mt-10 lg:w-10/12 text-[#222237] font-normal text-center text-sm sm:text-lg">
+              <p className="mt-3 font-normal text-center text-lg text-light-black">
                 Discover products to help you grow and scale your startup.
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
                 <span className="flex items-center">
                   Get Started
                   <img src={Arrow} alt="" className="pl-3" />
@@ -46,7 +46,7 @@ const Products = () => {
                 Trusted by amazing startups
               </h1>
             </div>
-            <div className="bg-[#EAFFF6] flex justify-between pl-[26rem] pr-[26rem]">
+            <div className="bg-light-green flex justify-between pl-[26rem] pr-[26rem]">
               <img src={Img1} alt="" className="w-28 h-28" />
               <img src={Img3} alt="" className="w-28 h-28" />
               <img src={Img2} alt="" className="w-28 h-28" />
@@ -56,9 +56,8 @@ const Products = () => {
 
         {/* second section */}
         <div className="container mt-24">
-          <div className="text-center mt-52 mb-10">
-            <h1 className="text-3xl font-bold">Great products tailored specifically for</h1>
-            <h1 className="text-3xl font-bold">African Founders</h1>
+          <div className="text-center mt-52 mb-10 ml-80 mr-80">
+            <h1 className="text-3xl font-bold">Great products tailored specifically for African Founders</h1>
           </div>
 
           {/* div for the cards */}

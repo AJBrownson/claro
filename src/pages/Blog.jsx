@@ -9,6 +9,8 @@ import Blog5 from "../assets/Images/Blog 5.png";
 import Blog6 from "../assets/Images/Blog 6.png";
 import Arrow from "../assets/Icons/arrow-trend-up.svg";
 
+
+
 const Blog = () => {
   return (
     <>
@@ -19,11 +21,11 @@ const Blog = () => {
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-light-black font-bold leading-7 md:leading-10">
+              <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
                 Resources for founders & innovators to learn how to build great
                 businesses.
               </h1>
-              <p className="mt-5 sm:mt-10 lg:w-10/12 text-light-black font-normal text-center text-sm sm:text-lg">
+              <p className="mt-3 font-normal text-center text-lg text-light-black">
                 Weekly posts on everything startup, funding, scaling, and
                 digital culture.
               </p>
@@ -52,9 +54,11 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="mt-96">
+
+        {/* second section */}
+        <div className="mt-96 mb-8">
           {/* heading section */}
-          <div className="flex justify-between pl-48 pr-48">
+          <div className="flex justify-between items-center pl-48 pr-48">
             <h1 className="font-bold text-3xl text-light-black w-96">
               Take a look at our articles & resources
             </h1>
