@@ -44,8 +44,8 @@ const Contact = () => {
         </div>
 
         {/* form card section */}
-        <div className="container">
-          <div className="shadow-2xl shadow-slate-200 rounded-3xl w-[80%] ml-40 ">
+        <div className="container h-screen">
+          <div className="absolute top-[37rem] left-36 bg-white shadow-2xl shadow-slate-200 rounded-3xl w-[80%]">
             <h1 className="text-3xl font-semibold text-center mt-16 mb-8">
               Fill the form or Send us an email
             </h1>
@@ -123,7 +123,7 @@ const Contact = () => {
         </div>
 
         {/* two cards section */}
-        <div className="flex justify-between pl-40 pr-40  mt-40">
+        <div className="flex justify-between pl-40 pr-40 mt-40">
           <div className="bg-light-black w-[45%] p-20 rounded-3xl text-white flex flex-col items-center">
             <img src={Message} alt="" />
             <h1 className="text-3xl font-semibold">Message Us</h1>
@@ -139,8 +139,7 @@ const Contact = () => {
 
         {/* last section */}
         <div className="w-full p-32 pt-0">
-            <h1 className="text-3xl font-bold mt-40 text-light-black text-center">Come and visit our offices</h1>
-            <h1 className="text-3xl font-bold mb-5 text-light-black text-center">around the world</h1>
+            <h1 className="text-3xl font-bold mt-40 mb-5 ml-80 mr-80 text-light-black text-center">Come and visit our offices around the world</h1>
             <div className="flex justify-between items-center">
             <div className="w-[70%]">
               <img src={Office} alt="" className="h-[25rem] w-[40rem] object-cover rounded-3xl"/>
