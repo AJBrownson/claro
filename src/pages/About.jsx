@@ -16,23 +16,24 @@ const About = () => {
   return (
     <>
       <main>
-        <div className="bg-cover bg-center bg-[#EAFFF6] h-screen relative">
-          <div className="absolute top-8 left-0 flex flex-row">
+        <div className="bg-light-green md:relative md:h-screen">
+        <div className="md:absolute hidden md:block md:lg:top-8 md:lg:left-0">
+          {/* <div className="absolute top-8 left-0 flex flex-row"> */}
             <img src={BG} alt="" />
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
-            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
+            <div className="text-light-black text-center w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-3 sm:mb-10">
+              <h1 className="text-2xl font-semibold md:text-3xl md:leading-tight">
                 Techfield is building navigational tools for underrepresented
                 founders and innovators in emerging markets.
               </h1>
-              <p className="mt-3 font-normal text-center text-lg text-light-black ml-24 mr-24">
+              <p className="mt-3 font-normal text-sm md:text-xs md:mx-10">
                 Be part of Techfield today and expand your horizons and tap into
                 a world of global venture opportunities
               </p>
             </div>
             <div className="flex justify-center items-center">
-            <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-lg text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+            <button className="bg-lime-green transition lg:text-xl font-bold rounded-lg text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                 <span className="flex ">
                   Get Started
                   <img src={Arr} alt='' className="pl-3"/>
@@ -43,43 +44,44 @@ const About = () => {
         </div>
 
         {/* section for the hero images */}
-        <div className="h-[90vh]">
-          <div className="container mx-auto flex justify-around pr-36 pl-36 absolute top-[39rem] left-10">
+        <div className="md:h-[80vh]">
+          <div className="flex flex-col md:grid md:grid-cols-2 md:gap-8 px-5 md:px-12 md:absolute md:top-[32rem] md:left-0">
             <img
               src={AboutImage1}
               alt=""
-              className="w-[32rem] h-[25rem] rounded-3xl object-cover"
+              className="md:w-80 md:h-80 rounded-3xl object-cover"
             />
             <img
               src={AboutImage2}
               alt=""
-              className="w-96 h-[30rem] object-cover rounded-3xl "
+              className="mt-10 md:mt-0 md:w-80 object-cover rounded-3xl "
             />
           </div>
-          <div className="container flex flex-row h-1/2 mt-[30rem] justify-between mx-auto pl-[11rem] pr-48">
-            <span className="w-96">
+
+          <div className="container flex flex-col md:grid md:grid-cols-2 md:gap-12 px-5 md:px-12 mt-32 md:mt-[20rem] md:mx-auto">
+            <span className="">
               <img
                 src={AboutImage3}
                 alt=""
-                className="w-96 h-[27rem] object-cover rounded-3xl"
+                className="md:h-80 object-cover rounded-3xl"
               />
             </span>
-            <div className="flex flex-col w-[24rem]">
-              <h1 className="text-3xl font-bold pb-5">
+            <div className="flex flex-col mt-5 md:mt-1">
+              <h1 className="text-3xl md:text-2xl font-bold pb-5">
                 Why we do, what we do.
               </h1>
-              <p className="pb-3">
+              <p className="pb-3 text-sm md:text-xs">
                 In Africa, more than 70% of total venture capital funding and
                 resources goes to diasporan founders or entrepreneurs with
                 foreign background, leaving the local founders at the mercy of
                 very limited ecosystem support.
               </p>
-              <p className="pb-3">
+              <p className="pb-3 text-sm md:text-xs">
                 We understand that the information and access gap is inhibiting
                 the growth of digital technology in the continent. This is the
                 main drive behind Techfield.
               </p>
-              <p className="pb-3">
+              <p className="text-sm md:text-xs">
                 We&apos;re sourcing all available venture-building opportunities
                 across the globe; From Silicon valley in the US to London in the
                 UK, United Arab Emirates, Singapore, Germany, etc, and bringing
@@ -90,28 +92,28 @@ const About = () => {
         </div>
 
         {/* third section */}
-        <div className="bg-light-black text-[#FFFFFF] p-40 relative flex justify-between">
-          <div className="absolute top-32 left-0 h-40">
+        <div className="bg-light-black text-white px-5 md:px-12 py-16 md:py-20 md:relative flex flex-col md:grid md:grid-cols-2 md:gap-12 justify-between">
+          <div className="hidden md:block md:absolute md:top-32 md:left-0 md:h-40">
             <img src={BGDark} alt="" />
           </div>
-          <div className="w-96 flex flex-col justify-between">
-            <h1 className="text-3xl font-bold mb-3">
+          <div className="flex flex-col justify-between">
+            <h1 className="text-xl md:text-2xl font-bold mb-10 md:mb-3">
               Unlocking and connecting African startups with global
               opportunities
             </h1>
-            <div className="flex justify-between">
+            <div className="flex flex-row justify-between">
               <span className="flex flex-col">
-                <p className="text-5xl font-medium mb-1">20+</p>
-                <p>Startups Empowered</p>
+                <p className="text-2xl md:text-3xl font-medium mb-1">20+</p>
+                <p className='md:text-sm'>Startups Empowered</p>
               </span>
               <span className="flex flex-col">
-                <p className="text-5xl font-medium mb-1">$500k</p>
-                <p>Seed Capital Raised</p>
+                <p className="text-2xl md:text-3xl font-medium mb-1">$500k</p>
+                <p className='md:text-sm'>Seed Capital Raised</p>
               </span>
             </div>
           </div>
 
-          <div className="flex flex-col w-96">
+          <div className="flex flex-col mt-12 md:mt-0">
             <div className="mb-14">
               <span className="flex items-center mb-4">
                 <img src={SupIcon} alt="" />
@@ -119,7 +121,7 @@ const About = () => {
                   Round-the-clock Support
                 </h1>
               </span>
-              <p>
+              <p className='md:text-sm'>
                 We have real people who help you through your problems 24/7,
                 whether they’re helping you take the first step or the next
                 step.
@@ -130,7 +132,7 @@ const About = () => {
                 <img src={ComIcon} alt="" />
                 <h1 className="text-xl font-bold pl-4">Friendly Community</h1>
               </span>
-              <p>
+              <p className='md:text-sm'>
                 A rich community to connect with other bright folks who are
                 making their own way. Exchange ideas, share experiences, move
                 forward.
@@ -141,7 +143,7 @@ const About = () => {
                 <img src={HelpIcon} alt="" />
                 <h1 className="text-xl font-bold pl-4">Help & Advice</h1>
               </span>
-              <p>
+              <p className='md:text-sm'>
                 We cover it all. From how-to videos to expertly-authored blog
                 posts, we&apos;ve got tons of inspiration and solid advice
                 waiting for you.
@@ -151,47 +153,50 @@ const About = () => {
         </div>
 
         {/* fourth section */}
-        <div className="flex flex-col p-32">
+        <div className="flex flex-col mb-20 md:mb-0 mt-20 px-5 md:px-12 md:mt-0 md:p-32">
           {/* upper section div */}
-          <div className="flex flex-row-reverse justify-between align-middle ">
-            <div className="p-6 w-1/2 ml-20">
-              <img src={CEO} alt="" />
-            </div>
-            <div className="p-3 mt-16 w-1/2">
-              <h1 className="text-4xl font-bold mb-7 text-light-black">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 ">
+  
+            <div className="">
+              <h1 className="text-xl mt-5 md:mt-2 md:text-xl font-bold mb-5 md:mb-3 text-light-black">
                 Democratizing access to global venture-building opportunities to
                 founders in Africa.
               </h1>
-              <p className="text-light-black mb-7">
+              <p className="text-light-black mb-3 md:mb-3 md:text-sm">
                 We pay more attention to impact-driven Founders, solving some of
                 the world&apos;s biggest challenges and addressing at least 5 of
                 UN&apos;s sustainable goals.
               </p>
-              <p className="text-light-black">
+              <p className="text-light-black md:text-sm">
                 To all early stage startup founders, Techfield is your catalyst
                 for innovation and growth, get access to tools, support, and
                 opportunities to ignite innovation and fuel your entrepreneurial
                 journey. Let&apos;s build together. Welcome to Techfield.
               </p>
             </div>
+
+            <div className="">
+              <img src={CEO} alt="" className="md:h-[21rem] md:object-cover md:rounded-3xl"/>
+            </div>
+
           </div>
 
           {/* lower section div */}
           <div className="w-full">
-            <h1 className="text-3xl font-bold mt-40 mb-8 ml-80 mr-80 text-light-black text-center">Come and visit our offices around the world</h1>
-            <div className="flex justify-between items-center">
-            <div className="w-[70%]">
-              <img src={Office} alt="" className="h-[25rem] w-[40rem] object-cover rounded-3xl"/>
+            <h1 className="text-xl md:text-2xl font-bold mt-20 md:mt-40 mb-8 md:mx-36 text-light-black text-center">Come and visit our offices around the world</h1>
+            <div className="flex flex-col md:grid md:grid-cols-2 md:gap-12 md:justify-between items-center">
+            <div className="">
+              <img src={Office} alt="" className=""/>
             </div>
-            <div className="w-[30%]">
-              <div className="w-[16.5rem] mb-16">
-                <h1 className="text-3xl font-bold mb-3 text-light-black">Uyo, Nigeria</h1>
-                <p>Suite 216, Ibom E-Library Uyo, Akwa Ibom State.Nigeria.</p>
+            <div className="md:px-6">
+              <div className="mb-8">
+                <h1 className="text-xl md:text-2xl font-bold mb-3 text-light-black">Uyo, Nigeria</h1>
+                <p className="text-sm">Suite 216, Ibom E-Library Uyo, Akwa Ibom State.Nigeria.</p>
               </div>
 
-              <div className="w-[16.5rem]">
-                <h1 className="text-3xl font-bold mb-3 text-light-black">London Office</h1>
-                <p>2H Woodstock Studios 36 Woodstock Grove London, W12 8LE United Kingdom</p>
+              <div className="">
+                <h1 className="text-xl md:text-2xl font-bold mb-3 text-light-black">London Office</h1>
+                <p className="text-sm">2H Woodstock Studios 36 Woodstock Grove London, W12 8LE United Kingdom</p>
               </div>
             </div>
           </div>

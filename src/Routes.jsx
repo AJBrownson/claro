@@ -13,7 +13,7 @@ const Routing = () => {
   return (
     <>
       <Navbar />
-      <Routes>
+       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/products" element={<Products />} />

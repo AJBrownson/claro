@@ -16,22 +16,22 @@ const Products = () => {
   return (
     <>
       <main>
-        <div className="bg-light-green h-screen relative">
-          <div className="absolute top-[1.8rem] left-0 flex flex-row">
+        <div className="bg-light-green md:h-screen md:relative">
+          <div className="hidden md:absolute md:top-[1.8rem] md:left-0 md:flex">
             <img src={BG} alt="" />
           </div>
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
-            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-7 sm:mb-10">
-              <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
+            <div className="text-light-black text-center w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-3 sm:mb-10">
+              <h1 className="text-2xl font-semibold md:text-3xl md:leading-tight">
                 Raise the capital you need to fuel innovation, scale your
                 business, and turn your ideas into reality.
               </h1>
-              <p className="mt-3 font-normal text-center text-lg text-light-black">
+              <p className="mt-3 font-normal text-sm md:text-xs md:mx-10">
                 Discover products to help you grow and scale your startup.
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none bg-lime-green lg:text-xl font-bold rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                 <span className="flex items-center">
                   Get Started
                   <img src={Arrow} alt="" className="pl-3" />
@@ -42,36 +42,37 @@ const Products = () => {
 
           <div className="flex flex-col">
             <div className="text-center">
-              <h1 className="text-3xl font-bold">
+              <h1 className="text-xl md:text-2xl font-bold">
                 Trusted by amazing startups
               </h1>
             </div>
-            <div className="bg-light-green flex justify-between pl-[26rem] pr-[26rem]">
-              <img src={Img1} alt="" className="w-28 h-28" />
-              <img src={Img3} alt="" className="w-28 h-28" />
-              <img src={Img2} alt="" className="w-28 h-28" />
+            <div className="bg-light-green flex justify-between px-5 md:px-48">
+              <img src={Img1} alt="" className="w-20 h-20 md:w-24" />
+              <img src={Img3} alt="" className="w-20 h-20 md:w-24" />
+              <img src={Img2} alt="" className="w-20 h-20 md:w-24" />
             </div>
           </div>
         </div>
 
         {/* second section */}
-        <div className="container mt-24">
-          <div className="text-center mt-52 mb-10 ml-80 mr-80">
-            <h1 className="text-3xl font-bold">Great products tailored specifically for African Founders</h1>
+        <div className="container mt-10 md:mt-20 md:px-8">
+          <div className="text-center mb-10 px-5 md:px-0">
+            <h1 className="text-xl md:text-2xl font-bold md:mx-36">Great products tailored specifically for African Founders</h1>
           </div>
 
           {/* div for the cards */}
-          <div className="flex flex-col pl-32">
-            <div className=" w-[70rem] text-white flex justify-between bg-[#222237] rounded-3xl mb-48">
-              <div className="p-16 w-[30rem]">
-                <h1 className="text-3xl font-bold mb-3">Accelerate</h1>
-                <p className="mb-24">
+          <div className="flex flex-col px-5">
+
+            <div className="md:w-96 text-white flex flex-col-reverse md:flex-row md:justify-between bg-light-black rounded-3xl mb-20 md:mb-48">
+              <div className="p-4 md:p-0">
+                <h1 className="text-3xl md:text-2xl font-bold mb-3">Accelerate</h1>
+                <p className="text-sm mb-5 md:mb-24">
                   Unlock your startup&apos;s full potential with our
                   comprehensive accelerator program. Benefit from expert
                   guidance, valuable resources, and a network of industry
                   leaders to propel your growth and success
                 </p>
-                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+                <button className="focus:outline-none bg-lime-green lg:text-xl font-bold rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                   <span className="flex items-center">
                     Get Started
                     <img src={Arrow} alt="" className="pl-3" />
@@ -81,43 +82,43 @@ const Products = () => {
               <img
                 src={Accelerate}
                 alt=""
-                className="h-[29rem] w-[28rem] object-cover rounded-3xl"
+                className="rounded-3xl"
               />
             </div>
-
-            <div className=" w-[70rem] text-[#222237] flex flex-row-reverse justify-between bg-[#00EC85] rounded-3xl mb-48">
-              <div className="p-16 w-[30rem]">
+{/* 
+            <div className="md:w-[70rem] flex flex-col-reverse md:flex-row md:justify-between bg-lime-green rounded-3xl mb-20 md:mb-48">
+              <div className="p-4 md:p-16 md:w-[30rem]">
                 <h1 className="text-3xl font-bold mb-3">Raise</h1>
-                <p className="mb-24">
+                <p className="text-sm md:text-base mb-5 md:mb-24">
                   Connect with a vast network of global investors, build
                   valuable relationships, and raise the capital you need to take
                   your startup to new heights. Discover a world of funding
                   opportunities with Techfield
                 </p>
-                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#222237] bg-[#222237] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl border border-[#222237] px-4 sm:px-10 text-[#00EC85] py-2 sm:py-4 text-sm">
+                <button className="focus:outline-none bg-light-black lg:text-xl font-bold rounded-xl text-lime-green px-4 sm:px-10 border border-light-black py-2 sm:py-4 text-sm">
                   <span className="flex items-center">
                     Get Started
-                    <img src={ArrowGreen} alt="" className="pl-3 w-9" />
+                    <img src={ArrowGreen} alt="" className="pl-3" />
                   </span>
                 </button>
               </div>
               <img
                 src={Raise}
                 alt=""
-                className="h-[29rem] w-[28rem] object-cover rounded-3xl"
+                className="md:h-[29rem] md:w-[28rem] object-cover rounded-3xl"
               />
             </div>
 
-            <div className=" w-[70rem] text-white flex justify-between bg-[#222237] rounded-3xl mb-48">
-              <div className="p-16 w-[30rem]">
+            <div className="md:w-[70rem] text-white flex flex-col-reverse md:flex-row md:justify-between bg-light-black rounded-3xl mb-20 md:mb-48">
+              <div className="p-4 md:p-16 md:w-[30rem]">
                 <h1 className="text-3xl font-bold mb-3">Nomadic</h1>
-                <p className="mb-24">
+                <p className="text-sm md:text-base mb-5 md:mb-24">
                   Take your startup on an extraordinary journey. Launch, expand,
                   or relocate your venture to 100+ world-leading tech hubs.
                   Explore new markets, access vibrant ecosystems, and fuel your
                   growth with Techfield&apos;s Nomadic
                 </p>
-                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00EC85] bg-[#00EC85] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-[#222237] px-4 sm:px-10 border border-[#00EC85] py-2 sm:py-4 text-sm">
+                <button className="focus:outline-none bg-lime-green lg:text-xl font-bold rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
                   <span className="flex items-center">
                     Get Started
                     <img src={Arrow} alt="" className="pl-3" />
@@ -127,33 +128,33 @@ const Products = () => {
               <img
                 src={Normadic}
                 alt=""
-                className="h-[29rem] w-[28rem] object-cover rounded-3xl"
+                className="md:h-[29rem] md:w-[28rem] object-cover rounded-3xl"
               />
             </div>
 
-            <div className=" w-[70rem] text-[#222237] flex flex-row-reverse justify-between bg-[#00EC85] rounded-3xl mb-48">
-              <div className="p-16 w-[30rem]">
+            <div className="md:w-[70rem] flex flex-col-reverse md:flex-row md:justify-between bg-lime-green rounded-3xl mb-20 md:mb-48">
+              <div className="p-4 md:p-16 md:w-[30rem]">
                 <h1 className="text-3xl font-bold mb-3">Co-founder Match</h1>
-                <p className="mb-24">
+                <p className="text-sm md:text-base mb-5 md:mb-24">
                   Build a winning team. Connect with like-minded entrepreneurs,
                   discover potential co-founders, and collaborate with
                   individuals who share your passion and drive. Find the missing
                   piece for your startup&apos;s success.
                 </p>
-                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#222237] bg-[#222237] transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl border border-[#222237] px-4 sm:px-10 text-[#00EC85] py-2 sm:py-4 text-sm">
+                <button className="focus:outline-none bg-light-black lg:text-xl font-bold rounded-xl text-lime-green px-4 sm:px-10 border border-light-black py-2 sm:py-4 text-sm">
                   <span className="flex items-center">
                     Get Started
-                    <img src={ArrowGreen} alt="" className="pl-3 w-9" />
+                    <img src={ArrowGreen} alt="" className="pl-3" />
                   </span>
                 </button>
               </div>
               <img
                 src={Cofounder}
                 alt=""
-                className="h-[29rem] w-[28rem] object-cover rounded-3xl"
+                className="md:h-[29rem] md:w-[28rem] object-cover rounded-3xl"
               />
-            </div>
-          </div>
+            </div> */}
+          </div> 
         </div>
       </main>
     </>

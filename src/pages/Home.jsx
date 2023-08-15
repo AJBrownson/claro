@@ -12,13 +12,7 @@ import Educate from "../assets/Icons/Educate Icon.svg";
 import Empower from "../assets/Icons/Empower Icon.svg";
 import Portrait from "../assets/Images/portrait-successful-businesspeople-sitting-cafe-table.png";
 import Portrait2 from "../assets/Images/Made for African founders _ startups.png";
-import AccIcon from "../assets/Icons/Accelerate Icon.svg";
-import ArrGreen from "../assets/Icons/arrow-trend-up Green.svg";
 import Arr from "../assets/Icons/arrow-trend-up.svg";
-import RaIcon from "../assets/Icons/Raise Icon.svg";
-import NorIcon from "../assets/Icons/Normadic Icon.svg";
-import MaIcon from "../assets/Icons/Match Icon.svg";
-import { PiCaretDown } from "react-icons/pi";
 import JoinIcon from "../assets/Icons/Join Premier Global Network Icon.svg";
 import ConnIcon from "../assets/Icons/Connect With Global Investors.svg";
 import LaunIcon from "../assets/Icons/Launch _ Expand Globally Icon.svg";
@@ -28,37 +22,37 @@ import AcceIcon from "../assets/Icons/Access Essential.svg";
 import Avatar from "../assets/Images/avatar6.png";
 import Blog1 from "../assets/Images/Blog 1.png";
 import Blog2 from "../assets/Images/Blog 2.png";
-
+import Dropdown from "../components/Dropdown";
 
 
 const Home = () => {
   return (
     <>
       <main>
-        <div className="bg-cover bg-center bg-light-green h-screen relative">
-          <div className="absolute top-8 left-0">
+        <div className="bg-light-green md:relative md:h-screen">
+          <div className="md:absolute hidden md:block md:top-8 md:left-0">
             <img src={BG} alt="" />
           </div>
-          <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
-            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 mt-3 sm:mb-10">
-              <h1 className="text-5xl text-center text-light-black leading-tight font-semibold">
+          <div className="container mx-auto flex flex-col items-center px-2 py-12 sm:py-24">
+            <div className="text-light-black text-center w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 md:mb-3 mt-3 sm:mb-10">
+              <h1 className="text-2xl font-semibold md:text-3xl md:leading-tight">
                 Unlocking Global Venture Opportunities for Underserved
                 Early-Stage African Founders
               </h1>
-              <p className="mt-3 font-normal text-center text-lg text-light-black ml-24 mr-24">
+              <p className="mt-3 font-normal text-sm md:text-xs md:mx-10">
                 We connect underserved early-stage founders, innovators, and
                 talents to unlimited venture support and resources to accelerate
                 growth.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-lg text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+            <div className="grid grid-col gap-4 md:grid-cols-2 md:gap-6">
+              <button className="focus:outline-none bg-lime-green text-light-black border border-lime-green px-4 py-2 sm:py-4 text-sm font-bold sm:text-xs sm:px-4 md:px-4 lg:text-xl rounded-lg ">
                 <span className="flex ">
                   Get Started
                   <img src={Arr} alt='' className="pl-3"/>
                 </span>
               </button>
-              <button className="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[00EC85] bg-transparent transition duration-150 ease-in-out hover:border-lime-green lg:text-xl lg:font-bold  hover:text-lime-green rounded-lg border border-light-black text-light-black px-4 sm:px-10 py-2 sm:py-4 text-sm">
+              <button className=" focus:outline-none bg-transparent hover:border-lime-green hover:text-lime-green border border-light-black text-light-black px-4 py-2 sm:py-4 text-sm font-bold sm:text-xs sm:px-4 md:px-4 lg:text-xl rounded-lg">
               <span className="flex ">
                   Learn More
                   <img src={Arr} alt='' className="pl-3"/>
@@ -69,65 +63,65 @@ const Home = () => {
         </div>
 
         {/* section for the hero image */}
-        <div className="h-[65vh]">
-          <div className="container mx-auto flex justify-center absolute top-[39rem] left-10">
-            <img src={HeroImage} alt="" className="w-4/5" />
+        <div className="mb-16 md:h-[40vh]">
+          <div className="px-5 md:px-20 md:absolute md:top-[28rem] md:left-0">
+            <img src={HeroImage} alt="" className="md:w-full" />
           </div>
-          <div className="container flex flex-row h-4/5 mt-[30rem] justify-between mx-auto p-16 pl-32 pr-32">
-            <span className="w-64">
-            <h3 className="text-4xl font-bold leading-tight">Trusted by amazing startups</h3>
+          <div className="flex flex-col md:flex-row md:px-20 md:mt-40">
+            <span className="mt-10 md:mt-6">
+            <h3 className="text-center md:text-start md:w-4/5 text-2xl md:text-2xl font-bold md:leading-tight">Trusted by amazing startups</h3>
             </span>
-            <div className="grid gap-10 grid-cols-3 grid-rows-3">
-              <img src={Img1} alt="" className="w-40" />
-              <img src={Img3} alt="" className="w-40" />
-              <img src={Img2} alt="" className="w-40" />
-              <img src={Img4} alt="" className="w-40" />
-              <img src={Img5} alt="" className="w-40" />
-              <img src={Img3} alt="" className="w-40" />
-              <img src={Img2} alt="" className="w-40" />
-              <img src={Img1} alt="" className="w-40" />
-              <img src={Img4} alt="" className="w-40" />
+            <div className="grid grid-cols-3 gap-2 md:gap-4 px-4 md:px-0 sm:grid sm:gap-6 mt-8 md:mt-0 sm:grid-cols-3 sm:grid-rows-3">
+              <img src={Img1} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img3} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img2} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img4} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img5} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img3} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img2} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img1} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
+              <img src={Img4} alt="" className="sm:w-40 w-28 pt-4 px-2 md:px-0" />
             </div>
           </div>
         </div>
 
-        {/* section for the approach */}
-        <div className="bg-light-black text-[#FFFFFF] h-3/4 p-16 relative">
+         {/* section for the approach */}
+         <div className="bg-light-black text-white h-3/4 p-16 relative">
           <div className="absolute top-20 left-0 h-40">
             <img src={BGDark} alt="" />
           </div>
-          <div className="text-center mt-10">
-            <h1 className="text-3xl font-bold mb-3">Our approach</h1>
-            <p>
+          <div className="text-center mt-10 md:mb-8">
+            <h1 className="text-2xl md:text-3xl font-bold mb-3">Our approach</h1>
+            <p className="text-sm">
               We support our founders by equipping, educating, and
-              empoweringthem.
+              empowering them.
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-24 p-20">
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={Equip} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">Equip</h1>
-              <p>
+          <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 md:p-2">
+            <div className="p-6 mt-10 sm:mt-0 md:p-6 border rounded-3xl border-lime-green">
+              <img src={Equip} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-xl font-bold pb-3">Equip</h1>
+              <p className='text-xs'>
                 Providing founders with the tools, resources, and guidance they
                 need to thrive in the competitive tech landscape.
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={Educate} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">Educate</h1>
-              <p>
+            <div className="p-6 mt-10 sm:mt-0 md:p-6 border rounded-3xl border-lime-green">
+              <img src={Educate} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-xl font-bold pb-3">Educate</h1>
+              <p className='text-xs'>
                 Offering comprehensive educational programs and
                 knowledge-sharing opportunities to help founders sharpen their
                 skills and stay ahead of the curve.
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={Empower} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">Empower</h1>
-              <p>
+            <div className="p-6 mt-10 sm:mt-0 md:p-6 border rounded-3xl border-lime-green">
+              <img src={Empower} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-xl font-bold pb-3">Empower</h1>
+              <p className='text-xs'>
                 Enabling founders to take charge of their entrepreneurial
                 journey, fostering confidence, resilience, and the ability to
                 make impactful decisions.
@@ -136,164 +130,123 @@ const Home = () => {
           </div>
         </div>
 
-        {/* new section */}
-        <div className="flex flex-col p-32">
+
+         {/* new section */}
+         <div className="flex flex-col px-1 mt-20">
           {/* upper section div */}
-          <div className="flex flex-row justify-between align-middle p-4">
-            <div className="p-6 w-1/2 mr-20">
-              <img src={Portrait} alt="" />
+          <div className="flex flex-col md:grid md:grid-cols-2 md:gap-10 md:px-16 justify-between">
+            <div className="p-4 md:p-0 md:mr-0">
+              <img src={Portrait} alt="" className="mt-6 md:mt-5"/>
             </div>
-            <div className="p-6 mt-16 w-1/2">
-              <h1 className="text-4xl font-bold mb-4 text-light-black">
+            <div className="p-4 md:p-6 md:mt-12">
+              <h1 className="text-xl font-bold mb-4 md:mb-2 text-light-black">
                 Building tools for founders and innovators in emerging markets.
               </h1>
-              <p className="text-light-black mb-10">
+              <p className="text-light-black mb-10 md:mb-3 md:text-xs">
                 At Techfield, we are committed to Unlocking global venture
                 opportunities and empowering underserved early-stage African
                 founders to accelerate growth, drive innovation, and make their
                 mark in the tech industry.
               </p>
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold rounded-lg text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
+              <button className="focus:outline-none bg-lime-green lg:text-xl font-bold rounded-md text-light-black border border-lime-green px-4 py-2 md:text-xs">
                 <span className="flex ">
                   Learn More
-                  <img src={Arr} alt='' className="pl-3"/>
+                  <img src={Arr} alt='' className="pl-3 md:w-6 "/>
                 </span>
               </button>
             </div>
           </div>
 
-          {/* lower section div */}
-          <div className="flex flex-row justify-between align-middle p-4 mt-16">
-            <div className="p-6 mt-4 w-1/2">
-              <h1 className="text-4xl font-bold mb-4 text-light-black">
+
+            {/* lower section div */}
+            <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-10 md:px-16 md:mt-12 justify-between">
+            <div className="p-4 md:p-6 md:mt-12">
+              <h1 className="text-xl font-bold mb-4 md:mb-2 text-light-black">
                 Made for African founders & startups
               </h1>
-              <p className="text-light-black mb-4">
+              <p className="text-light-black mb-10 md:mb-3 md:text-xs">
                 Discover products to help you grow and scale your startup.
               </p>
-
               {/* div for the dropdown */}
-              <div>
-                <div className="w-96 border border-lime-green p-4 rounded-2xl">
-                  <span className="flex flex-row items-center">
-                    <img src={AccIcon} alt="" className="pr-2" />
-                    <h1 className="text-lg font-semibold text-light-black">
-                      Accelerate
-                    </h1>
-                  </span>
-                  <span className="flex justify-between">
-                    <p className="text-light-black ">
-                      Fast-track your startup&apos;s growth
-                    </p>
-                    <img src={ArrGreen} alt="" className="w-6 h-6"/>
-                  </span>
-                </div>
-              </div>
-              <div className="w-96 p-2 flex items-center justify-between">
-                <span className="flex flex-row items-center">
-                  <img src={RaIcon} alt="" className="pr-2" />
-                  <h1 className="text-lg font-semibold text-light-black">
-                    Raise
-                  </h1>
-                </span>
-                <PiCaretDown className="mr-3"/>
-              </div>
-              <div className="w-96 p-2 flex items-center justify-between">
-                <span className="flex flex-row items-center">
-                  <img src={NorIcon} alt="" className="pr-2" />
-                  <h1 className="text-lg font-semibold text-light-black">
-                    Normadic
-                  </h1>
-                </span>
-                <PiCaretDown className="mr-3"/>
-              </div>
-              <div className="w-96 p-2 flex items-center justify-between">
-                <span className="flex flex-row items-center">
-                  <img src={MaIcon} alt="" className="pr-2" />
-                  <h1 className="text-lg font-semibold text-light-black">
-                    Match
-                  </h1>
-                </span>
-                <PiCaretDown className="mr-3"/>
-              </div>
+              <Dropdown />
             </div>
-
-            <div className="p-4 w-1/2 ml-20">
-              <img src={Portrait2} alt="" />
+            <div className="p-4 md:p-0 md:mr-0">
+              <img src={Portrait2} alt="" className="mt-6 md:mt-16"/>
             </div>
           </div>
+          
         </div>
 
         {/* amplify section */}
-        <div className="bg-light-black text-[#FFFFFF] h-1/2 p-16 relative">
-        <div className="absolute top-[21rem] left-[-16rem] w-[100rem] h-[100rem">
+        <div className="bg-light-black text-white h-1/2 p-16 relative xs:mt-16">
+        <div className="hidden md:absolute md:top-[21rem] md:left-[-16rem] md:w-[100rem] md:h-[100rem">
             <img src={BGDark} alt="" />
           </div>
-          <div className="text-center">
-            <h1 className="text-3xl font-bold mb-2">
+          <div className="text-center mt-10 md:mb-8">
+            <h1 className="text-2xl md:text-3xl font-bold mb-3">
               Amplify Your Startup&apos;s Success
             </h1>
-            <p>Thousands of Founders and innovators are using us to;</p>
+            <p className="text-sm">Thousands of Founders and innovators are using us to</p>
           </div>
 
-          <div className="grid grid-cols-3 grid-rows-2 gap-24 p-20">
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={JoinIcon} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">
+          <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 md:p-2">
+            <div className="p-6 mt-10 sm:mt-0 md:p-4 border rounded-3xl border-lime-green">
+              <img src={JoinIcon} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-lg font-bold pb-3">
                 Join Premier Global Network
               </h1>
-              <p>
+              <p className='text-xs'>
                 Unlock Opportunities with Prestigious Accelerators, Incubators,
                 and Venture Studios
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={ConnIcon} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">
+            <div className="p-6 mt-10 sm:mt-0 md:p-4 border rounded-3xl border-lime-green">
+              <img src={ConnIcon} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-lg font-bold pb-3">
                 Connect with Global Investors
               </h1>
-              <p>
+              <p className='text-xs'>
                 Raise Funds and Build Valuable Relationships with 200k+ Global
                 Investors
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={LaunIcon} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">
+            <div className="p-6 mt-10 sm:mt-0 md:p-4 border rounded-3xl border-lime-green">
+              <img src={LaunIcon} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-lg font-bold pb-3">
                 Launch and Expand Globally
               </h1>
-              <p>
+              <p className='text-xs'>
                 Take Your Startup to New Heights in 100+ World-Leading Tech Hubs
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={FindIcon} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">
+            <div className="p-6 mt-10 sm:mt-0 md:p-4 border rounded-3xl border-lime-green">
+              <img src={FindIcon} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-lg font-bold pb-3">
                 Find Your Ideal Co-founders
               </h1>
-              <p>Drive Your Vision Forward with Perfect Co-founder Matches</p>
+              <p className='text-xs'>Drive Your Vision Forward with Perfect Co-founder Matches</p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={ForgIcon} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">
+            <div className="p-6 mt-10 sm:mt-0 md:p-4 border rounded-3xl border-lime-green">
+              <img src={ForgIcon} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-lg font-bold pb-3">
                 Forge Powerful Partnerships
               </h1>
-              <p>
+              <p className='text-xs'>
                 Collaborate with Leading Corporations, Agencies, Governments,
                 and Institutions
               </p>
             </div>
 
-            <div className="p-10 border rounded-3xl border-lime-green">
-              <img src={AcceIcon} alt="" className="pt-4 pb-4" />
-              <h1 className="text-xl font-bold pb-3">
+            <div className="p-6 mt-10 sm:mt-0 md:p-4 border rounded-3xl border-lime-green">
+              <img src={AcceIcon} alt="" className="pt-4 pb-4 w-8 md:w-9" />
+              <h1 className="text-md md:text-lg font-bold pb-3">
                 Access Essential Venture Tools
               </h1>
-              <p>
+              <p className='text-xs'>
                 Empower Your Startup&apos;s Success with 250+ Discounted Venture
                 Building Tools
               </p>
@@ -301,29 +254,30 @@ const Home = () => {
           </div>
         </div>
 
-        {/* testimonials section */}
-        <div className="mb-20">
-          {/* testimonials */}
-          <div className="p-16">
-            <div className="text-center p-16 pb-10">
+         {/* testimonials section */}
+         <div className="mb-20">
+
+          {/* testimonials heading */}
+          <div className="md:mt-28">
+            <div className="text-center p-16 md:p-0 pb-10 md:pb-10">
               <h1 className="text-3xl font-bold mb-3">Testimonials</h1>
-              <p className=" mr-[22rem] ml-[22rem]">
+              <p className="md:mx-44">
                 Join thousands of founders and innovators that are already
                 enjoying the benefits of Techfield
               </p>
             </div>
             
             {/* quote div */}
-            <div className="flex items-center justify-center">
-              <div className="quote-box">
-                <div className="bg-green-200 rounded-r-lg rounded-l-lg pt-10 pb-10 pl-20 pr-20 m-0 w-[40rem]">
-                  <blockquote className="p-0 mb-3 font-bold">
+            <div className="flex items-center justify-center xs:px-5">
+              <div className="md:mx-5">
+                <div className="bg-green-200 rounded-2xl py-10 px-10 md:px-28 m-0 md:w-[35rem]">
+                  <blockquote className="p-0 mb-3 font-bold xs:text-center md:text-sm">
                     &quot;It’s an innovative, easy to use interface. It’s not
                     confusing; you don’t need to explain it. It’s
                     self-servicing&quot;.
                   </blockquote>
                   <div className="text-center">
-                    <h1 className="font-bold text-xl">Katherine Abiola</h1>
+                    <h1 className="font-bold text-xl md:text-lg">Katherine Abiola</h1>
                     <p>Founder Korner</p>
                   </div>
                 </div>
@@ -331,44 +285,44 @@ const Home = () => {
             </div>
             {/* avatar div */}
             <div className="flex items-center justify-center mt-10">
-              <div className="flex justify-between w-96">
-                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
-                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
-                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
-                <img src={Avatar} alt="" className="w-16 h-16 rounded-full" />
+              <div className="flex justify-between w-96 md:w-80 xs:px-5">
+                <img src={Avatar} alt="" className="w-12 h-12 md:w-14 md:h-14 rounded-full" />
+                <img src={Avatar} alt="" className="w-12 h-12 md:w-14 md:h-14 rounded-full" />
+                <img src={Avatar} alt="" className="w-12 h-12 md:w-14 md:h-14 rounded-full" />
+                <img src={Avatar} alt="" className="w-12 h-12 md:w-14 md:h-14 rounded-full" />
               </div>
             </div>
           </div>
         </div>
 
-        {/* article div */}
-        <div className="mb-40">
+         {/* article div */}
+         <div className="mb-40 md:mb-32 md:mt-40">
           <div className="flex items-center justify-center">
-            <div className="flex justify-between w-[75%]">
-              <div className="w-96">
-                <h1 className="text-3xl font-bold text-light-black">
+            <div className="md:flex md:justify-between md:w-[75%]">
+              <div className="text-center md:text-start md:w-80">
+                <h1 className="text-xl md:text-2xl font-bold text-light-black">
                   Take a look at our articles & resources
                 </h1>
               </div>
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green transition duration-150 ease-in-out hover:bg- lg:text-xl lg:font-bold  rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 text-sm">
-                <span className="flex items-center">
+              <button className="hidden md:block focus:outline-none bg-lime-green text-light-black border border-lime-green px-4 py-2 sm:py-4 text-sm font-bold sm:text-xs sm:px-4 md:px-4 lg:text-xl rounded-lg ">
+                <span className="flex ">
                   Browse Articles
-                  <img src={Arr} alt="" className="pl-2" />
+                  <img src={Arr} alt='' className="pl-3"/>
                 </span>
               </button>
             </div>
           </div>
 
           {/* cards */}
-          <div className="flex justify-between mt-20 pl-40 pr-40">
-          <div className="flex flex-row justify-between items-center p-4 w-[30rem] shadow-xl shadow-slate-200 rounded-2xl">
+          <div className="flex flex-col px-5 mt-10 md:px-24">
+          <div className="flex flex-col mb-10 md:mb-12 md:flex-row justify-between md:items-center p-4 md:w-[36rem] shadow-xl shadow-slate-200 rounded-2xl">
             <img
               src={Blog1}
               alt=""
-              className="w-48 h-48 object-cover rounded-xl"
+              className="md:w-52 md:h-52 object-cover rounded-xl"
             />
-            <div className="flex flex-col pl-4">
-              <h1 className="font-bold text-sm mb-2 pr-12">
+            <div className="flex flex-col mt-3 md:mt-0 md:pl-4">
+              <h1 className="font-bold text-sm mb-2 md:pr-12">
                 Early-Stage Startup Investment in Africa report in 2023
               </h1>
               <p className="text-sm mb-4">
@@ -379,14 +333,14 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex flex-row justify-between items-center p-4 w-[30rem] shadow-xl shadow-slate-200 rounded-2xl">
+          <div className="flex flex-col md:flex-row justify-between md:items-center p-4 md:w-[36rem] shadow-xl shadow-slate-200 rounded-2xl">
             <img
               src={Blog2}
               alt=""
-              className="w-48 h-48 object-cover rounded-xl"
+              className="md:w-52 md:h-52 object-cover rounded-xl"
             />
-            <div className="flex flex-col pl-4">
-              <h1 className="font-bold text-sm mb-2 pr-12">
+            <div className="flex flex-col mt-3 md:mt-0 md:pl-4">
+              <h1 className="font-bold text-sm mb-2 md:pr-12">
                 Africa Start-up and Technology Developments in 2023
               </h1>
               <p className="text-sm mb-4">
@@ -396,6 +350,15 @@ const Home = () => {
               <h3 className="font-bold text-sm">Read More</h3>
             </div>
           </div>
+          </div>
+
+          <div className="px-5 mt-5 md:hidden">
+          <button className="bg-lime-green px-10 py-5 rounded-xl font-bold">
+                <span className="flex items-center">
+                  Browse Articles
+                  <img src={Arr} alt="" className="pl-2" />
+                </span>
+          </button>
           </div>
         </div>
       </main>
