@@ -66,7 +66,7 @@ const About = () => {
                 className="md:h-80 lg:h-96 xl:w-full xl:h-[30rem] object-cover rounded-3xl"
               />
             </span>
-            <div className="flex flex-col mt-5 md:mt-1">
+            <div className="flex flex-col mb-8 md:mb-0 mt-5 md:mt-1">
               <h1 className="text-3xl md:text-2xl xl:text-4xl font-bold pb-5">
                 Why we do, what we do.
               </h1>
