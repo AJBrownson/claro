@@ -24,6 +24,8 @@ import Blog1 from "../assets/Images/Blog 1.png";
 import Blog2 from "../assets/Images/Blog 2.png";
 import Dropdown from "../components/Dropdown";
 
+
+
 const Home = () => {
   return (
     <>
@@ -200,7 +202,7 @@ const Home = () => {
           </div>
 
           {/* lower section div */}
-          <div className="flex flex-col md:grid md:grid-cols-2 md:gap-10 lg:gap-28 md:px-16 lg:px-24 xl:mt-10 xl:mb-20 justify-between">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-10 lg:gap-28 md:px-16 lg:px-24 xl:mt-10 xl:mb-20 justify-between">
             <div className="p-4 md:p-6 md:mt-12 xl:mt-20 xl:px-16">
               <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold mb-4 md:mb-2 lg:pr-5 text-light-black">
                 Made for African founders & startups
