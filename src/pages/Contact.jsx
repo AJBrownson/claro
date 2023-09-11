@@ -143,7 +143,7 @@ const Contact = () => {
             <h1 className="text-xl md:text-2xl xl:text-4xl font-bold mt-20 md:mt-40 mb-8 md:mx-36 xl:mx-80 text-light-black text-center">Come and visit our offices around the world</h1>
             <div className="flex flex-col md:grid md:grid-cols-2 md:gap-12 xl:gap-0 md:justify-between items-center">
             <div className="">
-              <img src={Office} alt="" className=""/>
+              <img src={Office} alt="" className="mb-8 md:mb-0"/>
             </div>
             <div className="md:px-6 xl:px-36">
               <div className="mb-8">
