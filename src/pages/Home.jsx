@@ -1,4 +1,4 @@
-// import React from 'react'
+// import {useState} from 'react'
 import BG from "../assets/Images/Background Graphic Element.svg";
 import BGDark from "../assets/Images/Dark Background Element.svg";
 import HeroImage from "../assets/Images/Hero Image.png";
@@ -27,6 +27,7 @@ import Dropdown from "../components/Dropdown";
 
 
 const Home = () => {
+
   return (
     <>
       <main>
@@ -130,7 +131,7 @@ const Home = () => {
 
         {/* section for the approach */}
         <div className="bg-light-black text-white h-3/4 p-16 xl:p-20 relative">
-          <div className="absolute top-20 left-0 h-40">
+          <div className="absolute top-24 left-0 h-40">
             <img src={BGDark} alt="" />
           </div>
           <div className="text-center mt-10 md:mb-8">
@@ -221,7 +222,7 @@ const Home = () => {
 
         {/* amplify section */}
         <div className="bg-light-black text-white h-1/2 p-16 relative xs:mt-16">
-          <div className="hidden md:absolute md:top-[21rem] md:left-[-16rem] md:w-[100rem] md:h-[100rem]">
+          <div className="hidden md:block md:absolute md:top-[21rem] xl:top-[15.5rem] md:left-[-16rem] md:w-[100rem] md:h-[100rem]">
             <img src={BGDark} alt="" />
           </div>
           <div className="text-center mt-10 md:mb-8">
@@ -313,6 +314,7 @@ const Home = () => {
             </div>
 
             {/* quote div */}
+            {/* <Carousel currentIndex={currentIndex} goToSlide={goToSlide} /> */}
             <div className="flex items-center justify-center xs:px-5">
               <div className="md:mx-5">
                 <div className="bg-green-200 rounded-2xl py-10 px-10 md:px-28 m-0 md:w-[35rem]">
@@ -336,22 +338,26 @@ const Home = () => {
                 <img
                   src={Avatar}
                   alt=""
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full cursor-pointer"
+                  
                 />
                 <img
                   src={Avatar}
                   alt=""
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full cursor-pointer"
+                  
                 />
                 <img
                   src={Avatar}
                   alt=""
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full cursor-pointer"
+                  
                 />
                 <img
                   src={Avatar}
                   alt=""
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full cursor-pointer"
+                  
                 />
               </div>
             </div>
