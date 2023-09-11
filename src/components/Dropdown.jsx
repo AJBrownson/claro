@@ -32,8 +32,8 @@ const Dropdown = () => {
             className="flex justify-between items-center"
           >
             <span className="flex flex-row items-center">
-              <img src={AccIcon} alt="" className="pr-4 md:w-10" />
-              <h1 className="text-lg md:text-sm font-semibold text-light-black">
+              <img src={AccIcon} alt="" className="pr-4 md:w-10 xl:w-12" />
+              <h1 className="text-lg md:text-sm xl:text-xl font-semibold text-light-black">
                 Accelerate
               </h1>
             </span>
@@ -68,8 +68,8 @@ const Dropdown = () => {
             className="flex justify-between items-center"
           >
             <span className="flex flex-row items-center">
-              <img src={RaIcon} alt="" className="pr-4 md:w-10" />
-              <h1 className="text-lg md:text-sm font-semibold text-light-black">
+              <img src={RaIcon} alt="" className="pr-4 md:w-10 xl:w-12" />
+              <h1 className="text-lg md:text-sm xl:text-xl font-semibold text-light-black">
                 Raise
               </h1>
             </span>
@@ -104,8 +104,8 @@ const Dropdown = () => {
             className="flex justify-between items-center"
           >
             <span className="flex flex-row items-center">
-              <img src={NorIcon} alt="" className="pr-4 md:w-10" />
-              <h1 className="text-lg md:text-sm font-semibold text-light-black">
+              <img src={NorIcon} alt="" className="pr-4 md:w-10 xl:w-12" />
+              <h1 className="text-lg md:text-sm xl:text-xl font-semibold text-light-black">
                 Normadic
               </h1>
             </span>
@@ -141,8 +141,8 @@ const Dropdown = () => {
             className="flex justify-between items-center"
           >
             <span className="flex flex-row items-center">
-              <img src={MaIcon} alt="" className="pr-4 md:w-10" />
-              <h1 className="text-lg md:text-sm font-semibold text-light-black">
+              <img src={MaIcon} alt="" className="pr-4 md:w-10 xl:w-12" />
+              <h1 className="text-lg md:text-sm xl:text-xl font-semibold text-light-black">
                 Match
               </h1>
             </span>

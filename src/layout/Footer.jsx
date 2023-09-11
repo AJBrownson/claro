@@ -8,12 +8,12 @@ import Twitter from "../assets/Icons/twitter-outline.svg"
 const Footer = () => {
   return (
     <>
-      <main className="bg-light-black text-white px-5 md:px-10 md:p-36 md:pb-12">
+      <main className="bg-light-black text-white px-5 md:px-10 lg:px-10 xl:px-24 md:p-36 md:pb-12">
         {/* top deck */}
         <div className="flex flex-col pt-20 md:pt-0 md:flex-row md:items-center md:justify-between pb-10 border-b-[1px] border-lime-green">
-          <div className="flex flex-col md:flex-row justify-between ">
-            <h1 className="text-3xl md:text-xl font-bold">Unlock Global Opportunities</h1>
-            <p className="md:text-sm">
+          <div className="flex flex-col md:flex-row justify-between pr-40 xl:pr-0">
+            <h1 className="text-3xl md:text-xl font-bold lg:text-3xl xl:text-4xl xl:leading-tight">Unlock Global Opportunities</h1>
+            <p className="md:text-sm xl:text-lg">
               Expand your horizons and tap into a world of global opportunities.
             </p>
           </div>
@@ -28,8 +28,8 @@ const Footer = () => {
             </button>
           </div>
 
-          <button className="hidden md:block focus:outline-none bg-lime-green lg:text-xl font-bold rounded-xl text-light-black px-4 sm:px-10 border border-lime-green py-2 sm:py-4 md:py-3 text-sm md:text-xs">
-            <span className="flex items-center justify-between">
+          <button className="hidden md:block focus:outline-none bg-lime-green font-bold rounded-xl text-light-black px-4 sm:px-10 lg:px-10 border border-lime-green py-2 sm:py-4 md:py-3 lg:py-0 xl:py-2 text-sm md:text-xs lg:text-xl">
+            <span className="flex items-center text-center">
               Get Started
               <img src={Arr} alt="" className="pl-2" />
             </span>
@@ -40,13 +40,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between mt-16 pb-10 md:pb-16 border-b-[1px] border-lime-green">
           <div className="flex flex-col px-5 md:px-0 pb-20 w-[20rem]">
             <img src={Logo} alt="" className="w-48 md:w-52 mb-6" />
-            <p className="mb-6 md:text-sm">
+            <p className="mb-6 md:text-sm xl:text-lg">
               Expand your horizons and tap into a world of global opportunities.
             </p>
             <span className="flex justify-between md:w-[12rem]">
-            <img src={FB} alt="" className="w-10 md:w-8 " />
-            <img src={Insta} alt="" className="w-10 md:w-8 " />
-            <img src={Twitter} alt="" className="w-10 md:w-8 " />
+            <img src={FB} alt="" className="w-10 md:w-8 xl:w-12" />
+            <img src={Insta} alt="" className="w-10 md:w-8 xl:w-12 " />
+            <img src={Twitter} alt="" className="w-10 md:w-8 xl:w-12 " />
             </span>
           </div>
           
@@ -78,9 +78,9 @@ const Footer = () => {
           </div>
           
           <div className="hidden md:grid grid-cols-3 grid-rows-4 gap-4 h-72 w-[45%]">
-            <p className="md:text-xl font-bold mb-10">Product</p>
-            <p className="md:text-xl font-bold mb-10">Company</p>
-            <p className="md:text-xl font-bold mb-10">Others</p>
+            <p className="md:text-xl xl:text-2xl font-bold mb-10">Product</p>
+            <p className="md:text-xl xl:text-2xl font-bold mb-10">Company</p>
+            <p className="md:text-xl xl:text-2xl font-bold mb-10">Others</p>
             <p>Accelerate</p>
             <p>Home</p>
             <p>Events</p>
@@ -97,7 +97,7 @@ const Footer = () => {
         </div>
 
         {/* lower deck */}
-        <div className="flex flex-col text-sm md:text-base pb-4 md:pb-0 text-center md:flex-row md:items-center md:justify-between mt-10 md:mt-16">
+        <div className="flex flex-col text-sm md:text-base xl:text-lg pb-4 md:pb-0 text-center md:flex-row md:items-center md:justify-between mt-10 md:mt-16">
           <p className="mb-2 md:mb-0">&copy; All rights reserved by <span className="text-lime-green font-bold">Techfield</span></p>
           <p>Designed and Developed by <span className="text-lime-green font-bold">Oniontabs</span></p>
         </div>

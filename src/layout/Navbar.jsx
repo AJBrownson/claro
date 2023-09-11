@@ -19,18 +19,18 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
   return (
-    <nav className="bg-light-green p-4 md:px-16">
+    <nav className="bg-light-green p-4 md:px-16 xl:px-24">
       <div className="flex items-center justify-between max-w-[1240px] mx-auto">
         <div className="p-2">
           <NavLink to="/" onClick={handleClick}>
-            <img src={Logo} alt="Techfield Logo" className="w-17 h-17 md:w-32 md:h-10" />
+            <img src={Logo} alt="Techfield Logo" className="w-17 h-17 md:w-32 md:h-10 xl:w-full" />
           </NavLink>
         </div>
 
         {/* desktop menu */}
         <ul className="hidden md:flex space-x-4">
           {navigation.map((item) => (
-            <li key={item.title} className="md:text-sm p-2">
+            <li key={item.title} className="md:text-sm xl:text-lg p-2">
               <NavLink
                 to={item.link}
                 className={
@@ -46,7 +46,7 @@ const Navbar = () => {
         </ul>
 
         <div className="p-2 hidden md:block">
-          <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green lg:text-xl font-bold rounded-xl text-light-black md:px-4 border border-lime-green sm:py-4 md:py-2 text-sm">
+          <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-green bg-lime-green lg:text-lg xl:text-xl font-bold rounded-xl text-light-black md:px-4 xl:px-10 border border-lime-green sm:py-4 md:py-2 xl:py-4 text-sm">
             Get Started
           </button>
         </div>
