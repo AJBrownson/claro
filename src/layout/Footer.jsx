@@ -11,7 +11,7 @@ const Footer = () => {
       <main className="bg-light-black text-white px-5 md:px-10 lg:px-10 xl:px-24 md:p-36 md:pb-12">
         {/* top deck */}
         <div className="flex flex-col pt-20 px-5 md:px-0 md:pt-0 md:flex-row md:items-center md:justify-between pb-10 border-b-[1px] border-lime-green">
-          <div className="flex flex-col md:flex-row justify-between md:pr-40 xl:pr-0">
+          <div className="flex flex-col md:flex-row justify-between md:pr-40 xl:pr-80">
             <h1 className="text-3xl mb-5 md:mb-0 md:text-xl font-bold lg:text-3xl xl:text-4xl xl:leading-tight">Unlock Global Opportunities</h1>
             <p className="md:text-sm xl:text-lg">
               Expand your horizons and tap into a world of global opportunities.
@@ -28,12 +28,14 @@ const Footer = () => {
             </button>
           </div>
 
+          <div className=''>
           <button className="hidden md:block focus:outline-none bg-lime-green font-bold rounded-xl text-light-black px-4 sm:px-10 lg:px-10 border border-lime-green py-2 sm:py-4 md:py-3 lg:py-0 xl:py-2 text-sm md:text-xs lg:text-xl">
             <span className="flex items-center text-center">
               Get Started
               <img src={Arr} alt="" className="pl-2" />
             </span>
           </button>
+          </div>
         </div>
 
         {/* middle deck */}
